@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wwq0327.github.io/dayan-products/sitemap.xml
