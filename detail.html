@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品详情 — 大衍语文店</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="detail-header">
+    <div class="container">
+      <button class="back-link" onclick="historyBack()">
+        <span class="back-arrow">←</span> 返回列表
+      </button>
+
+      <div class="detail-meta" id="metaArea"></div>
+
+      <h1 class="detail-title" id="titleArea"></h1>
+      <div class="detail-price-badge" id="priceBadge"></div>
+    </div>
+  </header>
+
+  <div class="detail-body" id="detailBody"></div>
+
+  <footer class="footer">
+    <p>Powered by <strong>大衍神君 AI Agent</strong> · 王老师团队</p>
+    <p style="margin-top:8px"><a href="https://wwq0327.github.io/dayan-products/">https://wwq0327.github.io/dayan-products/</a></p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script>
+    (function() {
+      function getParam(name) {
+        const p = new URLSearchParams(window.location.search);
+        return p.get(name);
+      }
+
+      const id = getParam('id');
+      const material = DATA.getById(id);
+
+      if (!material) {
+        document.getElementById('metaArea').innerHTML = '';
+        document.getElementById('titleArea').textContent = '产品未找到';
+        document.getElementById('detailBody').innerHTML =
+          '<div class="detail-error"><h2>产品未找到</h2><p>请确认链接是否正确，或返回列表重新选择。</p></div>';
+        return;
+      }
+
+      /* ── Breadcrumb / Meta ── */
+      const catName = DATA.getCategoryName(material.category);
+      document.getElementById('metaArea').innerHTML =
+        '<span class="detail-category">' + catName + '</span>' +
+        '<span class="detail-date">' + material.date + '</span>' +
+        '<div class="detail-tags">' +
+          material.tags.map(t => '<span class="detail-tag">' + t + '</span>').join('') +
+        '</div>';
+
+      document.getElementById('titleArea').textContent = material.title;
+      document.getElementById('priceBadge').textContent = material.price + ' · 购买';
+
+      /* ── Content ── */
+      const adj = DATA.getAdjacent(id);
+      let contentHtml = '<div class="detail-content">' + material.content + '</div>';
+
+      /* ── Purchase CTA ── */
+      contentHtml += `
+        <div style="background:#fef9f8;border:1px solid #f5d8d3;border-radius:12px;padding:24px;margin-top:32px;text-align:center">
+          <h3 style="font-size:18px;font-weight:600;margin-bottom:8px">如何购买此产品</h3>
+          <p style="color:#666;font-size:14px;margin-bottom:16px">发送邮件至 <strong style="color:#c0392b;font-size:16px">sjfc_0224@qq.com</strong></p>
+          <p style="color:#888;font-size:13px">标题写产品名称，如"${material.title.split('（')[0]}"，自动发货</p>
+          <div style="margin-top:16px">
+            <a href="mailto:sjfc_0224@qq.com?subject=${encodeURIComponent(material.title.split('（')[0])}" style="display:inline-flex;align-items:center;gap:8px;background:#c0392b;color:#fff;font-size:16px;font-weight:600;padding:12px 28px;border-radius:8px;text-decoration:none">
+              📧 立即购买
+            </a>
+          </div>
+        </div>`;
+
+      /* ── Nav ── */
+      contentHtml += '<div class="detail-nav">';
+      if (adj.prev) {
+        contentHtml +=
+          '<button class="nav-btn" onclick="window.location.href=\'detail.html?id=' + adj.prev.id + '\'">' +
+            '<div><div class="nav-btn-label">← 上一篇</div><div class="nav-btn-title">' + adj.prev.title + '</div></div>' +
+          '</button>';
+      } else {
+        contentHtml += '<div></div>';
+      }
+      if (adj.next) {
+        contentHtml +=
+          '<button class="nav-btn nav-btn-next" onclick="window.location.href=\'detail.html?id=' + adj.next.id + '\'">' +
+            '<div><div class="nav-btn-label">下一篇 →</div><div class="nav-btn-title">' + adj.next.title + '</div></div>' +
+          '</button>';
+      }
+      contentHtml += '</div>';
+
+      document.getElementById('detailBody').innerHTML = contentHtml;
+
+      /* ── Dynamic title ── */
+      document.title = material.title + ' — 大衍语文店';
+
+    })();
+
+    function historyBack() {
+      if (document.referrer && document.referrer.indexOf(window.location.host) === 0) {
+        history.back();
+      } else {
+        window.location.href = 'index.html';
+      }
+    }
+  </script>
+</body>
+</html>

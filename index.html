@@ -1,198 +1,164 @@
-# 大衍语文·AI助教资源店 · SEO优化版
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>中考语文复习资料_语文专项训练_初中语文考点_大衍语文店</title>
-<meta name="description" content="中考语文专项复习资料下载，含病句修改、文言虚词、名著考点、散文阅读等。南充真题格式，教育专家审核。可直接用于课堂或学生自学。">
-<meta name="keywords" content="中考语文,语文复习资料,病句修改,文言虚词,名著考点,中考语文专项训练,初中语文">
-<style>
-body{font-family:'PingFang SC','Microsoft YaHei',sans-serif;max-width:800px;margin:0 auto;padding:40px 20px;background:#faf9f7;color:#2c2c2c}
-h1{font-size:1.8rem;color:#1a1a1a;border-bottom:2px solid #c0392b;padding-bottom:12px}
-.product{margin:24px 0;padding:20px;border:1px solid #e0dcd5;border-radius:10px;background:#fff}
-.product h2{font-size:1.2rem;margin:0 0 8px}
-.price{font-size:1.4rem;color:#c0392b;font-weight:bold}
-.desc{color:#666;font-size:0.95rem;margin:8px 0}
-.tag{display:inline-block;background:#f5f0eb;color:#888;font-size:0.75rem;padding:2px 8px;border-radius:4px;margin-right:6px}
-footer{text-align:center;color:#999;font-size:0.85rem;margin-top:48px;padding-top:24px;border-top:1px solid #e0dcd5}
-.note{background:#fff8f0;border-left:4px solid #f39c12;padding:12px 16px;margin:24px 0;font-size:0.9rem;color:#7d6608}
-.pay-section{margin-top:32px;padding:24px;background:#fff;border:1px solid #e0dcd5;border-radius:10px;text-align:center}
-.pay-section h3{font-size:1.1rem;margin:0 0 16px;color:#333}
-.pay-section img{max-width:200px;border:1px solid #eee;border-radius:6px}
-.pay-section p{font-size:0.85rem;color:#999;margin:12px 0 0}
-.contact-box{margin-top:32px;padding:24px;background:#fff;border:1px solid #e0dcd5;border-radius:10px}
-.contact-box h3{font-size:1.1rem;margin:0 0 12px;color:#333}
-.contact-box p{font-size:0.95rem;color:#666;margin:4px 0}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大衍语文店 · 中考语文专项复习资料</title>
+  <meta name="description" content="中考语文专项复习资料小店，含病句修改、文言虚词、名著考点、散文/说明文/议论文阅读等。由大衍神君AI打造，王老师（资深语文教师）审核。">
+  <meta name="keywords" content="中考语文,语文复习资料,病句修改,文言虚词,名著考点,初中语文">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>🔮 大衍语文·中考语文专项复习资料店</h1>
 
-<div class="note">
-  <strong>关于我们</strong>：由大衍神君AI打造 + 王老师（资深语文教师，十年以上教学经验）审核。<br>
-  <strong>产品定位</strong>：中考语文精准复习资料，南充真题格式，可直接用于课堂或学生自学。
-</div>
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div>
+          <h1 class="header-title">🔮 大衍语文店</h1>
+          <p class="header-subtitle">中考语文专项复习资料 · AI助教资源店</p>
+        </div>
+        <div class="header-badge">📧 sjfc_0224@qq.com</div>
+      </div>
 
-<div class="product">
-<span class="tag">热门</span><span class="tag">专项训练</span>
-<h2>📝 病句修改选择题专项训练（10题）</h2>
-<span class="price">¥9.9</span>
-<p class="desc">标准中考格式，含答案、逐题详解、考点分布表。涵盖句式杂糅、搭配不当、语序不当等核心考点。适用：专项复习、考前冲刺。</p>
-</div>
+      <div class="stats-bar" id="statsBar"></div>
 
-<div class="product">
-<span class="tag">核心考点</span><span class="tag">文言文</span>
-<h2>📖 中考文言虚词复习专题（之以其而于乃）</h2>
-<span class="price">¥19.9</span>
-<p class="desc">系统梳理中考必备6个文言虚词，HTML幻灯片格式，适合课堂投影或学生自学。源自南充近三年中考文言文考查方向。</p>
-</div>
+      <div class="filter-bar" id="filterBar"></div>
 
-<div class="product">
-<span class="tag">必考</span><span class="tag">名著阅读</span>
-<h2>📚 中考名著必背考点</h2>
-<span class="price">¥14.9</span>
-<p class="desc">系统梳理《红星照耀中国》《钢铁是怎样炼成的》《儒林外史》等核心名著，附答题格式与易混提醒。2026中考名著复习首选。</p>
-</div>
+      <div class="search-bar">
+        <input class="search-input" type="text" id="searchInput" placeholder="搜索产品名称、分类…" autocomplete="off">
+      </div>
+    </div>
+  </header>
 
-<div class="product">
-<span class="tag">专项</span><span class="tag">现代文</span>
-<h2>📖 中考散文阅读专题复习教案</h2>
-<span class="price">¥19.9</span>
-<p class="desc">基于2022-2025南充中考散文真题，含考点分布、题型分析、答题格式。分值16分，复习效率最高的专项模块。</p>
-</div>
+  <main class="container">
+    <div class="grid" id="grid"></div>
 
-<div class="product">
-<span class="tag">专项</span><span class="tag">现代文</span>
-<h2>📖 中考散文阅读专题复习教案</h2>
-<span class="price">¥19.9</span>
-<p class="desc">基于2022-2025南充中考散文真题，含考点分布、题型分析、答题格式。分值16分，复习效率最高的专项模块。</p>
-</div>
+    <div class="contact-section">
+      <div class="contact-box">
+        <h3>📧 如何购买</h3>
+        <p>发送邮件至以下地址，备注产品名称，自动发货：</p>
+        <div class="email-highlight">
+          <a href="mailto:sjfc_0224@qq.com">sjfc_0224@qq.com</a>
+        </div>
+        <div class="pay-qr">
+          <img src="wechat-pay.jpg" alt="微信支付二维码" onerror="this.style.display='none'">
+        </div>
+        <div class="pay-steps">
+          <ol>
+            <li><strong>选产品</strong> — 找到想要的学习资料</li>
+            <li><strong>付款</strong> — 微信扫码或转账</li>
+            <li><strong>发邮件</strong> — 标题写产品名称，如"病句修改"</li>
+            <li><strong>自动发货</strong> — 资料直接发送到您的邮箱</li>
+          </ol>
+        </div>
+        <p style="margin-top:12px;color:#c0392b;font-size:13px">⚠️ 邮件主题请写产品名称，便于自动识别发货</p>
+      </div>
+    </div>
+  </main>
 
-<div class="product">
-<span class="tag">高频考点</span><span class="tag">选择题</span>
-<h2>📋 中考文言虚词辨析选择题专项训练（10道）</h2>
-<span class="price">¥9.9</span>
-<p class="desc">针对中考文言虚词（之、而、以、于、其、乃、为、则、焉、乃）设计，每题含详细解析。适用：选择题专项突破、考前冲刺。</p>
-</div>
+  <footer class="footer">
+    <p>Powered by <strong>大衍神君 AI Agent</strong> · 王老师团队</p>
+    <p style="margin-top:8px"><a href="https://wwq0327.github.io/dayan-products/">https://wwq0327.github.io/dayan-products/</a></p>
+  </footer>
 
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📝 拼音专项复习清单（高频60词）</h2>
-<span class="price">¥9.9</span>
-<p class="desc">中考备考拼音专项复习，60个高频易错字音，多音字+平翘舌系统梳理，源自南充近三年真题。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📖 中考古诗词答题技巧与专题练习</h2>
-<span class="price">¥14.9</span>
-<p class="desc">5大题型答题模板+练习，含内容理解、情感主旨、炼字、表现手法、名句赏析，适用：古诗词专项突破。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📋 43天中考语文复习计划</h2>
-<span class="price">¥19.9</span>
-<p class="desc">南充中考系统复习方案，43天每日任务表，涵盖所有考点，源自真实教学实践。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📖 中考课外古诗词分类整理（高频词实词50题）</h2>
-<span class="price">¥14.9</span>
-<p class="desc">中考课外古诗词高频实词整理，50道专项练习，分类突破。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📝 南充中考古诗文名句必背80句</h2>
-<span class="price">¥9.9</span>
-<p class="desc">南充中考高频名句默写80句，涵盖近6年真题核心句型，适用于考前冲刺。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📝 中考文言虚词选择题专项训练（10道）</h2>
-<span class="price">¥9.9</span>
-<p class="desc">针对中考文言虚词设计，10道标准选择题，含完整答案与详细解析。</p>
-</div>
-<div class="product">
-<span class="tag">专项</span><span class="tag">现代文</span>
-<h2>📖 中考议论文阅读专题复习</h2>
-<span class="price">¥19.9</span>
-<p class="desc">议论文考点系统梳理，含答题模板、练习题、课件，南充近三年中考议论文真题分析。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📖 中考说明文阅读专题复习（含课件）</h2>
-<span class="price">¥19.9</span>
-<p class="desc">说明文阅读考点系统梳理，含南充近三年真题分析、答题模板，附HTML课件可直接投影使用。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📝 中考成语运用专项训练（含课件）</h2>
-<span class="price">¥14.9</span>
-<p class="desc">成语运用高频考点汇总，附HTML课件+小测卷，适合课堂互动或学生自主复习。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📚 文学文化常识中考复习教案</h2>
-<span class="price">¥14.9</span>
-<p class="desc">系统梳理中考文学文化常识要点，涵盖古代作家作品、重要典故、文化常识，配教案可直接上课。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📋 中考语文六年对比分析报告</h2>
-<span class="price">¥19.9</span>
-<p class="desc">南充中考2020-2025六年真题对比，含分值结构变化、文言文篇目汇总、高频考点分布，备考必备。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📖 《学习变现》个性化读书笔记</h2>
-<span class="price">¥9.9</span>
-<p class="desc">AI定制读书笔记，基于《学习变现》原书精华，针对语文老师/知识工作者如何把知识变能力、变收入。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>🎮 语文字音字形答题游戏（HTML互动课件）</h2>
-<span class="price">¥4.9</span>
-<p class="desc">48道字音字形选择题，游戏化答题界面，适合课堂互动或学生课后自测，轻松有趣。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📝 中考虚词专项练习（填空题20道）</h2>
-<span class="price">¥9.9</span>
-<p class="desc">中考文言虚词（之以其而于乃）20道填空专项练习，含完整答案，适用考前冲刺。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📝 中考虚词辨析选择题（打印版）</h2>
-<span class="price">¥9.9</span>
-<p class="desc">10道标准中考格式选择题，附带下划线标注版，方便打印后让学生课堂练习。</p>
-</div>
-<div class="product">
-<span class="tag">新品</span><span class="tag">中考专项</span>
-<h2>📖 片段写作专项训练（第1-4周冲刺）</h2>
-<span class="price">¥19.9</span>
-<p class="desc">中考片段写作四周冲刺课件包：人物描写、动作描写、托物言志，含PPT可直接投影。</p>
-</div>
-<div class="product">
-<span class="tag">资料库</span><span class="tag">小学</span>
-<h2>📚 小学学习资料库（19份精品）</h2>
-<span class="price">¥29.9</span>
-<p class="desc">读书笔记、语文复习、专题资料、教学工具、教学方法——5大分类19份精选学习资料，含古诗词80首分类、成语故事50则、阅读理解技巧、错题本模板、费曼学习法等。可直接使用。</p>
-</div>
-<div class="contact-box">
-<h3>📧 购买方式</h3>
-<p><strong>邮箱下单</strong>：发邮件至 <strong style="color:#c0392b;font-size:1.1rem">sjfc_0224@qq.com</strong></p>
-<p style="color:#666;font-size:0.9rem;margin:8px 0 12px">邮件标题写产品名称，收到后自动回复发货</p>
-<p style="margin:4px 0">1. 扫描下方微信支付二维码付款</p>
-<img src="wechat-pay.jpg" alt="微信支付二维码" style="max-width:180px;border:1px solid #eee;border-radius:6px">
-<p style="margin-top:12px">2. 付款后发邮件至 <strong>sjfc_0224@qq.com</strong>（备注产品名称）</p>
-<p>3. 自动发货：资料直接发送到您的邮箱</p>
-<p style="color:#c0392b;margin-top:8px">⚠️ 邮件主题请写产品名称，便于自动识别发货</p>
-</div>
+  <script src="js/data.js"></script>
+  <script>
+    (function() {
+      let activeCategory = 'all';
+      let searchQuery = '';
 
-<footer>
-  <p>Powered by 大衍神君 AI Agent · 王老师团队</p>
-  <p style="margin-top:8px">🔗 <a href="https://wwq0327.github.io/dayan-products/">https://wwq0327.github.io/dayan-products/</a></p>
-</footer>
+      /* ── Render Stats ── */
+      function renderStats() {
+        const stats = DATA.getCategoryStats();
+        const total = DATA.materials.length;
+        let html = '<div class="stat-item"><span class="stat-number">' + total + '</span> 份资料</div>';
+        DATA.categories.forEach(c => {
+          const count = stats[c.id] || 0;
+          if (count > 0) {
+            html += '<div class="stat-item"><span class="stat-number">' + count + '</span> ' + c.name + '</div>';
+          }
+        });
+        document.getElementById('statsBar').innerHTML = html;
+      }
+
+      /* ── Render Filter Buttons ── */
+      function renderFilters() {
+        const stats = DATA.getCategoryStats();
+        const total = DATA.materials.length;
+        let html = '<button class="filter-btn' + (activeCategory === 'all' ? ' active' : '') + '" data-category="all">全部 <span class="count">' + total + '</span></button>';
+        DATA.categories.forEach(c => {
+          const count = stats[c.id] || 0;
+          if (count === 0) return;
+          html += '<button class="filter-btn' + (activeCategory === c.id ? ' active' : '') + '" data-category="' + c.id + '">' + c.name + ' <span class="count">' + count + '</span></button>';
+        });
+        document.getElementById('filterBar').innerHTML = html;
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.addEventListener('click', function() {
+            activeCategory = this.dataset.category;
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            renderGrid();
+          });
+        });
+      }
+
+      /* ── Render Card Grid ── */
+      function renderGrid() {
+        let items = DATA.getByCategory(activeCategory);
+        const q = searchQuery.trim().toLowerCase();
+        if (q) {
+          items = items.filter(m =>
+            m.title.toLowerCase().includes(q) ||
+            m.summary.toLowerCase().includes(q) ||
+            m.tags.some(t => t.includes(q)) ||
+            DATA.getCategoryName(m.category).includes(q)
+          );
+        }
+
+        const grid = document.getElementById('grid');
+        if (items.length === 0) {
+          grid.innerHTML = '<div class="empty-state"><p>没有找到匹配的产品，试试其他关键词</p></div>';
+          return;
+        }
+
+        let html = '';
+        items.forEach(m => {
+          const catName = DATA.getCategoryName(m.category);
+          html += '<div class="card" data-id="' + m.id + '">' +
+            '<div class="card-category">' + catName + '</div>' +
+            '<div class="card-title">' + m.title + '</div>' +
+            '<div class="card-summary">' + m.summary + '</div>' +
+            '<div class="card-footer">' +
+              '<span class="card-price">' + m.price + '</span>' +
+              '<div class="card-tags">' +
+                m.tags.slice(0, 2).map(t => '<span class="card-tag">' + t + '</span>').join('') +
+              '</div>' +
+            '</div>' +
+          '</div>';
+        });
+        grid.innerHTML = html;
+
+        document.querySelectorAll('.card').forEach(card => {
+          card.addEventListener('click', function() {
+            window.location.href = 'detail.html?id=' + this.dataset.id;
+          });
+        });
+      }
+
+      /* ── Init ── */
+      renderStats();
+      renderFilters();
+      renderGrid();
+
+      document.getElementById('searchInput').addEventListener('input', function() {
+        searchQuery = this.value;
+        renderGrid();
+      });
+    })();
+  </script>
 </body>
 </html>
