@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大衍语文店 · 中考语文专项复习资料</title>
+  <meta name="description" content="中考语文专项复习资料小店，含病句修改、文言虚词、名著考点、散文/说明文/议论文阅读等。由大衍神君AI打造，王老师（资深语文教师）审核。">
+  <meta name="keywords" content="中考语文,语文复习资料,病句修改,文言虚词,名著考点,初中语文">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta property="og:title" content="大衍语文店 · 中考语文专项复习资料">
+  <meta property="og:description" content="23份中考语文专项复习资料，含病句修改、文言虚词、名著考点、作文模板等。适用南充中考备考。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wwq0327.github.io/dayan-products/">
+  <meta property="og:image" content="https://wwq0327.github.io/dayan-products/_previews/病句修改-预览.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="大衍语文店 · 中考语文专项复习资料">
+  <meta name="twitter:description" content="中考语文专项复习资料小店，含病句修改、文言虚词、名著考点等。">
+  <link rel="canonical" href="https://wwq0327.github.io/dayan-products/">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div>
+          <h1 class="header-title">🔮 大衍语文店</h1>
+          <p class="header-subtitle">中考语文专项复习资料 · AI助教资源店</p>
+        </div>
+        <div class="header-badge">📧 sjfc_0224@qq.com</div>
+      </div>
+
+      <div class="stats-bar" id="statsBar"></div>
+
+      <div class="filter-bar" id="filterBar"></div>
+
+      <div class="search-bar">
+        <input class="search-input" type="text" id="searchInput" placeholder="搜索产品名称、分类…" autocomplete="off">
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid" id="grid"></div>
+
+    <div class="contact-section">
+      <div class="contact-box two-col">
+        <div class="two-col-left">
+          <div class="qr-wrap">
+            <div class="qr-banner">推荐使用微信支付</div>
+            <img src="wechat-pay.jpg" alt="微信支付二维码" class="qr-img" onerror="this.parentElement.style.display='none'">
+            <div class="qr-footer">
+              <span class="wechat-icon-sm"></span>
+              <span>微信支付</span>
+            </div>
+          </div>
+        </div>
+        <div class="two-col-right">
+          <h3>📧 如何购买</h3>
+          <div class="email-highlight">
+            <a href="mailto:sjfc_0224@qq.com">sjfc_0224@qq.com</a>
+          </div>
+          <div class="pay-steps">
+            <ol>
+              <li><strong>选产品</strong> — 找到想要的学习资料</li>
+              <li><strong>付款</strong> — 微信扫码或转账，备注产品名</li>
+              <li><strong>发邮件</strong> — 标题写产品名称，如"病句修改"</li>
+              <li><strong>自动发货</strong> — 资料直接发送到您的邮箱</li>
+            </ol>
+          </div>
+          <p class="buy-reminder">⚠️ 邮件主题请写产品名称，便于自动识别发货</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Powered by <strong>大衍神君 AI Agent</strong> · 王老师团队</p>
+    <p style="margin-top:8px"><a href="https://wwq0327.github.io/dayan-products/">https://wwq0327.github.io/dayan-products/</a></p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script>
+    (function() {
+      let activeCategory = 'all';
+      let searchQuery = '';
+
+      /* ── Render Stats ── */
+      function renderStats() {
+        const stats = DATA.getCategoryStats();
+        const total = DATA.materials.length;
+        let html = '<div class="stat-item"><span class="stat-number">' + total + '</span> 份资料</div>';
+        DATA.categories.forEach(c => {
+          const count = stats[c.id] || 0;
+          if (count > 0) {
+            html += '<div class="stat-item"><span class="stat-number">' + count + '</span> ' + c.name + '</div>';
+          }
+        });
+        document.getElementById('statsBar').innerHTML = html;
+      }
+
+      /* ── Render Filter Buttons ── */
+      function renderFilters() {
+        const stats = DATA.getCategoryStats();
+        const total = DATA.materials.length;
+        let html = '<button class="filter-btn' + (activeCategory === 'all' ? ' active' : '') + '" data-category="all">全部 <span class="count">' + total + '</span></button>';
+        DATA.categories.forEach(c => {
+          const count = stats[c.id] || 0;
+          if (count === 0) return;
+          html += '<button class="filter-btn' + (activeCategory === c.id ? ' active' : '') + '" data-category="' + c.id + '">' + c.name + ' <span class="count">' + count + '</span></button>';
+        });
+        document.getElementById('filterBar').innerHTML = html;
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.addEventListener('click', function() {
+            activeCategory = this.dataset.category;
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            renderGrid();
+          });
+        });
+      }
+
+      /* ── Render Card Grid ── */
+      function renderGrid() {
+        let items = DATA.getByCategory(activeCategory);
+        const q = searchQuery.trim().toLowerCase();
+        if (q) {
+          items = items.filter(m =>
+            m.title.toLowerCase().includes(q) ||
+            m.summary.toLowerCase().includes(q) ||
+            m.tags.some(t => t.includes(q)) ||
+            DATA.getCategoryName(m.category).includes(q)
+          );
+        }
+
+        const grid = document.getElementById('grid');
+        if (items.length === 0) {
+          grid.innerHTML = '<div class="empty-state"><p>没有找到匹配的产品，试试其他关键词</p></div>';
+          return;
+        }
+
+        let html = '';
+        items.forEach(m => {
+          const catName = DATA.getCategoryName(m.category);
+          html += '<div class="card" data-id="' + m.id + '">' +
+            '<div class="card-category">' + catName + '</div>' +
+            '<div class="card-title">' + m.title + '</div>' +
+            '<div class="card-summary">' + m.summary + '</div>' +
+            '<div class="card-footer">' +
+              '<span class="card-price">' + m.price + '</span>' +
+              '<div class="card-tags">' +
+                m.tags.slice(0, 2).map(t => '<span class="card-tag">' + t + '</span>').join('') +
+              '</div>' +
+            '</div>' +
+          '</div>';
+        });
+        grid.innerHTML = html;
+
+        document.querySelectorAll('.card').forEach(card => {
+          card.addEventListener('click', function() {
+            window.location.href = 'detail.html?id=' + this.dataset.id;
+          });
+        });
+      }
+
+      /* ── Init ── */
+      renderStats();
+      renderFilters();
+      renderGrid();
+
+      document.getElementById('searchInput').addEventListener('input', function() {
+        searchQuery = this.value;
+        renderGrid();
+      });
+    })();
+  </script>
+</body>
+</html>
