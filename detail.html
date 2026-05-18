@@ -77,10 +77,43 @@
         '卡通励志手机壁纸套装': 'wallpaper-cartoon-tiandao.jpg'
       };
       let heroImg = '';
-      for (const [kw, img] of Object.entries(imgMap)) {
+      const galleryMap = {
+        '水墨中国风手机壁纸套装': [
+          'wallpaper-ink-sunrise.jpg',
+          'wallpaper-ink-xiushen-1.jpg','wallpaper-ink-xiushen-2.jpg','wallpaper-ink-xiushen-3.jpg',
+          'wallpaper-ink-damo-1.jpg','wallpaper-ink-damo-2.jpg',
+          'wallpaper-ink-mingyue-1.jpg','wallpaper-ink-mingyue-2.jpg',
+          'wallpaper-ink-taohuayuan-1.jpg','wallpaper-ink-taohuayuan-2.jpg',
+          'wallpaper-ink-meihua-1.jpg','wallpaper-ink-meihua-2.jpg',
+          'wallpaper-ink-jiangnan-1.jpg','wallpaper-ink-jiangnan-2.jpg',
+          'wallpaper-ink-yuzhou-1.jpg','wallpaper-ink-yuzhou-2.jpg',
+          'wallpaper-ink-pubu-1.jpg','wallpaper-ink-pubu-2.jpg',
+          'wallpaper-ink-hetang-1.jpg','wallpaper-ink-hetang-2.jpg'
+        ],
+        '卡通励志手机壁纸套装': [
+          'wallpaper-cartoon-tiandao.jpg',
+          'wallpaper-cartoon-student-1.jpg','wallpaper-cartoon-student-2.jpg',
+          'wallpaper-cartoon-motiv-1.jpg','wallpaper-cartoon-motiv-2.jpg',
+          'wallpaper-cartoon-fenbi-1.jpg','wallpaper-cartoon-fenbi-2.jpg',
+          'wallpaper-cartoon-bisheng-1.jpg','wallpaper-cartoon-bisheng-2.jpg',
+          'wallpaper-cartoon-owl-1.jpg','wallpaper-cartoon-owl-2.jpg',
+          'wallpaper-cartoon-caodi-1.jpg','wallpaper-cartoon-caodi-2.jpg'
+        ]
+      };
+      for (const [kw, imgs] of Object.entries(galleryMap)) {
         if (material.title.includes(kw)) {
-          heroImg = '<div class="detail-hero-img"><img src="_previews/' + img + '" alt="' + material.title + '" /></div>';
+          heroImg = '<div class="detail-gallery">';
+          imgs.forEach(img => { heroImg += '<div class="gallery-thumb"><img src="_previews/' + img + '" alt="preview" /></div>'; });
+          heroImg += '</div>';
           break;
+        }
+      }
+      if (!heroImg) {
+        for (const [kw2, img2] of Object.entries(imgMap)) {
+          if (material.title.includes(kw2)) {
+            heroImg = '<div class="detail-hero-img"><img src="_previews/' + img2 + '" alt="' + material.title + '" /></div>';
+            break;
+          }
         }
       }
 
