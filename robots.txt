@@ -1,4 +1,12 @@
+# https://wwq0327.github.io/robots.txt
 User-agent: *
 Allow: /
 
 Sitemap: https://wwq0327.github.io/dayan-products/sitemap.xml
+
+# 加速收录
+User-agent: Baiduspider
+Crawl-delay: 10
+
+User-agent: Googlebot
+Crawl-delay: 10
