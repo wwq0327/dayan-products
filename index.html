@@ -147,7 +147,27 @@
         let html = '';
         items.forEach(m => {
           const catName = DATA.getCategoryName(m.category);
-          html += '<div class="card" data-id="' + m.id + '">' +
+          const imgMap = {
+            '病句修改': '病句修改-预览.png','拼音专项复习清单': '字音游戏-预览.png',
+            '虚词辨析': '虚词专题-预览.png','虚词复习专题': '虚词专题-预览.png',
+            '古诗词答题': '古诗词答题-预览.png','古诗词分类整理': '古诗词答题-预览.png',
+            '名著必背': '名著必背-预览.png','散文阅读': '说明文阅读-预览.png',
+            '说明文阅读': '说明文阅读-预览.png','议论文阅读': '议论文阅读-预览.png',
+            '万能写作模板': '记叙文万能模板-预览.png','万能答题模板': '记叙文万能模板-预览.png',
+            '43天语文': '43天复习计划-预览.png','六年对比报告': '六年对比报告-预览.png',
+            '学习资料库': '学习资料库-预览.png','成语运用': '成语运用-预览.png',
+            '字音字形': '字音游戏-预览.png',
+            '水墨中国风手机壁纸套装': '壁纸/水墨红日款-预览.jpg',
+            '卡通励志手机壁纸套装': '壁纸/卡通天道酬勤款-预览.jpg'
+          };
+          let cardImg = '';
+          for (const [kw, img] of Object.entries(imgMap)) {
+            if (m.title.includes(kw)) {
+              cardImg = '<div class="card-img-wrap"><img src="_previews/' + img + '" alt="' + m.title + '" class="card-img" /></div>';
+              break;
+            }
+          }
+          html += '<div class="card" data-id="' + m.id + '">' + cardImg +
             '<div class="card-category">' + catName + '</div>' +
             '<div class="card-title">' + m.title + '</div>' +
             '<div class="card-summary">' + m.summary + '</div>' +

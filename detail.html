@@ -62,9 +62,31 @@
       document.getElementById('titleArea').textContent = material.title;
       document.getElementById('priceBadge').textContent = material.price + ' · 购买';
 
+      /* ── Hero image ── */
+      const imgMap = {
+        '病句修改': '病句修改-预览.png','拼音专项复习清单': '字音游戏-预览.png',
+        '虚词辨析': '虚词专题-预览.png','虚词复习专题': '虚词专题-预览.png',
+        '古诗词答题': '古诗词答题-预览.png','古诗词分类整理': '古诗词答题-预览.png',
+        '名著必背': '名著必背-预览.png','散文阅读': '说明文阅读-预览.png',
+        '说明文阅读': '说明文阅读-预览.png','议论文阅读': '议论文阅读-预览.png',
+        '万能写作模板': '记叙文万能模板-预览.png','万能答题模板': '记叙文万能模板-预览.png',
+        '43天语文': '43天复习计划-预览.png','六年对比报告': '六年对比报告-预览.png',
+        '学习资料库': '学习资料库-预览.png','成语运用': '成语运用-预览.png',
+        '字音字形': '字音游戏-预览.png',
+        '水墨中国风手机壁纸套装': '壁纸/水墨红日款-预览.jpg',
+        '卡通励志手机壁纸套装': '壁纸/卡通天道酬勤款-预览.jpg'
+      };
+      let heroImg = '';
+      for (const [kw, img] of Object.entries(imgMap)) {
+        if (material.title.includes(kw)) {
+          heroImg = '<div class="detail-hero-img"><img src="_previews/' + img + '" alt="' + material.title + '" /></div>';
+          break;
+        }
+      }
+
       /* ── Content ── */
       const adj = DATA.getAdjacent(id);
-      let contentHtml = '<div class="detail-content">' + material.content + '</div>';
+      let contentHtml = heroImg + '<div class="detail-content">' + material.content + '</div>';
 
       /* ── Purchase CTA ── */
       contentHtml += `
