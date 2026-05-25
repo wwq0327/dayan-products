@@ -1898,4 +1898,29 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://wwq0327.github.io/dayan-products/article-yuedu-beikao-fensi.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wwq0327.github.io/dayan-products/article-yuedu-duanluo-fenxi.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wwq0327.github.io/dayan-products/article-yuedu-xushi-jiaose.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wwq0327.github.io/dayan-products/article-yuedu-yuedu-jieda.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wwq0327.github.io/dayan-products/article-yuedu-zhuti-gushi.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
