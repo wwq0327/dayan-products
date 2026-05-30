@@ -5266,4 +5266,16 @@
     <loc>https://wwq0327.github.io/dayan-products/article-chengyu-kaodian-50daoxun.html</loc>
     <lastmod>2026-05-30</lastmod>
   </url>
+  <url>
+    <loc>https://wwq0327.github.io/dayan-products/article-zuowen-jiewei-moban-30.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wwq0327.github.io/dayan-products/article-biaodian-fuhao-zongjie.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
