@@ -1807,7 +1807,7 @@ const DATA = {
       title: '中考语文古诗词背诵清单（部编版全6册汇总）',
       price: '免费',
       date: '2026-06-01',
-      summary: '',
+      summary: '中考语文古诗词背诵清单，部编版全6册汇总，含初中三年全部必背古诗词，适合考前集中背诵。',
       tags: ['中考语文', '免费阅读'],
       content: '\n        <p>…</p>\n        <p><a href="article-guci-beisong-qingdan.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -2257,7 +2257,7 @@ const DATA = {
       title: '中考古诗词默写易错字辨析',
       price: '免费',
       date: '2026-06-01',
-      summary: '中考古诗词默写易错字辨析，',
+      summary: '中考古诗词默写易错字辨析，汇总常考易错字、多音字、通假字，附记忆口诀，中考默写一分不丢。',
       tags: ['中考语文', '免费阅读'],
       content: '\n        <p>中考古诗词默写易错字辨析，…</p>\n        <p><a href="article-gushici-moci-bianxi.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -5177,7 +5177,7 @@ const DATA = {
       title: '中考语文文言虚词专项训练30题',
       price: '免费',
       date: '2026-06-01',
-      summary: '中考文言虚词专项训练30题，',
+      summary: '中考文言虚词专项训练30题，覆盖中考高频虚词（之、而、以、于、其、乃），配完整答案与解析。',
       tags: ['中考语文', '免费阅读'],
       content: '\n        <p>中考文言虚词专项训练30题，…</p>\n        <p><a href="article-wenyan-xuci-30.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -5187,7 +5187,7 @@ const DATA = {
       title: '中考语文文言虚词练习40题',
       price: '免费',
       date: '2026-06-01',
-      summary: '中考文言虚词练习40题，',
+      summary: '中考语文文言虚词练习40题，系统梳理中考必备虚词用法，含详细解析与答题技巧。',
       tags: ['中考语文', '免费阅读'],
       content: '\n        <p>中考文言虚词练习40题，…</p>\n        <p><a href="article-wenyan-xuci-40ti.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -5197,7 +5197,7 @@ const DATA = {
       title: '中考语文文言虚词专项训练50题',
       price: '免费',
       date: '2026-06-01',
-      summary: '中考文言虚词专项训练50题，',
+      summary: '中考语文文言虚词专项训练50题，针对中考虚词高频考点设计，适用考前冲刺专项突破。',
       tags: ['中考语文', '免费阅读'],
       content: '\n        <p>中考文言虚词专项训练50题，…</p>\n        <p><a href="article-wenyan-xuci-50.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -5207,7 +5207,7 @@ const DATA = {
       title: '中考语文文言虚词练习50题',
       price: '免费',
       date: '2026-06-01',
-      summary: '中考文言虚词练习50题，',
+      summary: '中考语文文言虚词练习50题，涵盖之、而、以、于等核心虚词，配答案与用法对比表。',
       tags: ['中考语文', '免费阅读'],
       content: '\n        <p>中考文言虚词练习50题，…</p>\n        <p><a href="article-wenyan-xuci-50ti.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -5227,7 +5227,7 @@ const DATA = {
       title: '中考语文文言虚词用法对比详解',
       price: '免费',
       date: '2026-06-01',
-      summary: '中考文言虚词用法对比详解，',
+      summary: '中考语文文言虚词用法对比详解，系统对比各虚词在不同语境中的用法差异，附经典例句。',
       tags: ['中考语文', '免费阅读'],
       content: '\n        <p>中考文言虚词用法对比详解，…</p>\n        <p><a href="article-wenyan-xuci-duibi.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -5247,7 +5247,7 @@ const DATA = {
       title: '中考语文文言虚词用法详解',
       price: '免费',
       date: '2026-06-01',
-      summary: '中考文言虚词用法详解，',
+      summary: '中考语文文言虚词用法详解，梳理中考必备虚词的基本用法与特殊用法，配练习题巩固。',
       tags: ['中考语文', '免费阅读'],
       content: '\n        <p>中考文言虚词用法详解，…</p>\n        <p><a href="article-wenyan-xuci-yongfa.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -5257,7 +5257,7 @@ const DATA = {
       title: '中考语文文言虚词于以乃用法详解',
       price: '免费',
       date: '2026-06-01',
-      summary: '中考文言虚词于以乃用法详解，',
+      summary: '中考语文文言虚词于、以、乃用法详解，针对这三个高频虚词专项梳理，附中考真题练习。',
       tags: ['中考语文', '免费阅读'],
       content: '\n        <p>中考文言虚词于以乃用法详解，…</p>\n        <p><a href="article-wenyan-xuci-yu-yi-nai.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -5287,7 +5287,7 @@ const DATA = {
       title: '中考语文文言虚词之字用法详解与练习',
       price: '免费',
       date: '2026-06-01',
-      summary: '',
+      summary: '中考文言虚词之字用法详解，涵盖之的多种用法（结构助词/代词/动词），配20道专项练习。',
       tags: ['中考语文', '免费阅读'],
       content: '\n        <p>…</p>\n        <p><a href="article-wenyan-xuci-zhi-zi.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -5297,7 +5297,7 @@ const DATA = {
       title: '中考语文文言虚词虚词复习专题',
       price: '免费',
       date: '2026-06-01',
-      summary: '中考文言虚词复习专题，掌握',
+      summary: '中考语文文言虚词复习专题，掌握之、而、以、于等核心虚词的多种用法，构建完整知识体系。',
       tags: ['中考语文', '免费阅读'],
       content: '\n        <p>中考文言虚词复习专题，掌握…</p>\n        <p><a href="article-wenyan-xuci-zhuanti.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -5307,7 +5307,7 @@ const DATA = {
       title: '中考文言虚词"之"字用法20题！专项突破初中最难虚词！',
       price: '免费',
       date: '2026-06-01',
-      summary: '',
+      summary: '专项突破初中最难虚词——之字，20道练习题，含详细解析，初中语文备考必备。',
       tags: ['中考文言虚词', '之字用法', '文言虚词之', '中考语文之字', '初中语文之字专项'],
       content: '\n        <p>…</p>\n        <p><a href="article-wenyan-yici-yongfa-20ti.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -5507,7 +5507,7 @@ const DATA = {
       title: '中考语文文言文虚词用法辨析与备考策略',
       price: '免费',
       date: '2026-06-01',
-      summary: '中考文言虚词怎么复习？掌握',
+      summary: '中考语文文言文虚词用法辨析与备考策略，系统梳理高频虚词辨析方法，配套真题训练。',
       tags: ['中考语文', '免费阅读'],
       content: '\n        <p>中考文言虚词怎么复习？掌握…</p>\n        <p><a href="article-wenyanwen-xuci-bianxi.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -6497,7 +6497,7 @@ const DATA = {
       title: '中考语文阅读理解核心答题技巧',
       price: '免费',
       date: '2026-06-01',
-      summary: '',
+      summary: '中考语文阅读理解核心答题技巧，归纳散文/说明文/议论文各题型万能答题格式，直接套用拿高分。',
       tags: ['中考语文', '免费阅读'],
       content: '\n        <p>…</p>\n        <p><a href="article-yuedu-jieda-jiqiao.html">免费阅读全文 →</a></p>\n      '
 ,    },
@@ -9367,7 +9367,7 @@ const DATA = {
       title: '中考语文作文结构技巧：如何写出层次分明的作文',
       price: '免费',
       date: '2026-06-01',
-      summary: '中考语文作文结构技巧，详解',
+      summary: '中考语文作文结构技巧，详解总分总/分总/悬念式等结构模式，让文章层次分明、逻辑清晰。',
       tags: ['中考作文结构', '并列式作文', '递进式结构', '总分总结构', '中考语文作文技巧'],
       content: '\n        <p>中考语文作文结构技巧，详解…</p>\n        <p><a href="article-zuowen-jiegou-jiqiao.html">免费阅读全文 →</a></p>\n      '
 ,    },
