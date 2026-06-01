@@ -5776,6 +5776,10 @@
     <ns0:changefreq>weekly</ns0:changefreq>
     <ns0:priority>0.8</ns0:priority>
   </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://wwq0327.github.io/dayan-products/article-zuowen-kaitou-12zhong.html</ns0:loc>
+    <ns0:lastmod>2026-06-01</ns0:lastmod>
+  </ns0:url>
 </ns0:urlset>
   <ns0:url>
     <ns0:loc>https://wwq0327.github.io/dayan-products/article-zhongkao-guancishang-shi.html</ns0:loc>
@@ -5807,6 +5811,10 @@
     <ns0:changefreq>weekly</ns0:changefreq>
     <ns0:priority>0.8</ns0:priority>
   </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://wwq0327.github.io/dayan-products/article-zuowen-kaitou-12zhong.html</ns0:loc>
+    <ns0:lastmod>2026-06-01</ns0:lastmod>
+  </ns0:url>
 </ns0:urlset>
   <ns0:url>
     <ns0:loc>https://wwq0327.github.io/dayan-products/article-mingzhu-xiyouji-kaodian-20.html</ns0:loc>
@@ -5831,5 +5839,9 @@
     <ns0:lastmod>2026-06-01</ns0:lastmod>
     <ns0:changefreq>weekly</ns0:changefreq>
     <ns0:priority>0.8</ns0:priority>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://wwq0327.github.io/dayan-products/article-zuowen-kaitou-12zhong.html</ns0:loc>
+    <ns0:lastmod>2026-06-01</ns0:lastmod>
   </ns0:url>
 </ns0:urlset>
