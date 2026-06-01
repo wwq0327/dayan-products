@@ -24,6 +24,10 @@
 <body>
 
   <header class="header">
+  <div id="countdown-banner" style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:#fff;text-align:center;padding:10px 16px;font-size:14px;font-weight:600;display:none">
+    <span id="countdown-text"></span>
+    <a href="#buy-now" style="color:#ffeaa7;text-decoration:underline;margin-left:8px">立即抢购→</a>
+  </div>
   <div style="background:linear-gradient(135deg,#c0392b,#e74c3c);color:#fff;text-align:center;padding:12px;font-size:15px;font-weight:600">
     🔥 南充中考全年备考 · <strong>病句/虚词/名著/阅读</strong> 专项资料助你提分！
     <a href="articles.html" style="color:#fff;text-decoration:underline;margin-left:8px">📚 全部文章→</a>
@@ -52,13 +56,18 @@
     <div class="grid" id="grid"></div>
 
 
-  <div style="background:#fff3f3;border:2px solid #c0392b;border-radius:12px;padding:16px 20px;margin:20px auto;max-width:750px;text-align:center;">
-    <p style="margin:0 0 8px;font-size:1rem;color:#333;"><strong>📦 想买资料？30秒下单：</strong></p>
-    <p style="margin:0 0 12px;font-size:0.85rem;color:#666;">发邮件到 <a href="mailto:sjfc_0224@qq.com?subject=病句修改&body=您好，我想购买病句修改资料，请发给我。">sjfc_0224@qq.com</a>，标题写「病句修改」或「虚词」即可自动发货</p>
-    <a href="mailto:sjfc_0224@qq.com?subject=病句修改&body=您好，我想购买病句修改资料，请发给我。" style="background:#c0392b;color:#fff;padding:10px 24px;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.9rem;">📧 一键发邮件下单 →</a>
+  <div id="buy-now" style="background:#fff3f3;border:2px solid #c0392b;border-radius:12px;padding:20px 24px;margin:20px auto;max-width:750px;text-align:center;">
+    <div style="display:inline-block;background:#c0392b;color:#fff;font-size:12px;padding:3px 10px;border-radius:50px;font-weight:600;margin-bottom:10px">🔥 热销中 · 已有大量考生购买</div>
+    <p style="margin:0 0 8px;font-size:1.05rem;color:#333;"><strong>📦 想买资料？30秒下单，立刻发货：</strong></p>
+    <p style="margin:0 0 14px;font-size:0.85rem;color:#666;">发邮件到 <strong><a href="mailto:sjfc_0224@qq.com?subject=病句修改&body=您好，我想购买大衍语文店的复习资料，请发给我。">sjfc_0224@qq.com</a></strong>，标题写「病句修改」或「虚词」等任意产品名即可自动发货，<strong style="color:#c0392b">几分钟内收到资料</strong></p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:10px">
+      <a href="mailto:sjfc_0224@qq.com?subject=病句修改&body=您好，我想购买大衍语文店的复习资料，请发给我。" style="background:#c0392b;color:#fff;padding:12px 28px;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;display:inline-block;">📧 一键发邮件下单 →</a>
+      <a href="#contact-section" style="background:#fff;color:#c0392b;border:2px solid #c0392b;padding:12px 28px;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;display:inline-block;">💬 查看购买流程</a>
+    </div>
+    <p style="margin:0;font-size:0.78rem;color:#999;">⚠️ 自动发货无需客服 · 邮箱24小时可发 · 资料直接发送到您的邮箱</p>
   </div>
 
-    <div class="contact-section">
+    <div class="contact-section" id="contact-section">
       <div class="contact-box two-col">
         <div class="two-col-left">
           <div class="qr-wrap">
@@ -73,7 +82,10 @@
         <div class="two-col-right">
           <h3>📧 如何购买 · 30秒搞定</h3>
           <div class="email-highlight">
-            <a href="mailto:sjfc_0224@qq.com?subject=病句修改&body=您好，我想购买病句修改资料，请发给我。">sjfc_0224@qq.com</a>
+            <a href="mailto:sjfc_0224@qq.com?subject=病句修改&body=您好，我想购买大衍语文店的复习资料，请发给我。">sjfc_0224@qq.com</a>
+          </div>
+          <div style="background:#fff8f8;border:1px solid #ffcccc;border-radius:8px;padding:10px 14px;margin-bottom:12px;text-align:left">
+            <span style="color:#c0392b;font-weight:700">⏱️ 3步完成购买，全程不超过30秒</span>
           </div>
           <div class="pay-steps">
             <ol>
@@ -199,7 +211,23 @@
         });
       }
 
+      /* ── Countdown Banner ── */
+      function renderCountdown() {
+        // 南充中考日期：2026年6月中旬，假设6月15日
+        var examDate = new Date('2026-06-15T09:00:00+08:00');
+        var now = new Date();
+        var diff = examDate - now;
+        var banner = document.getElementById('countdown-banner');
+        if (diff > 0) {
+          var days = Math.floor(diff / 86400000);
+          document.getElementById('countdown-text').textContent =
+            '⏰ 南充中考倒计时 ' + days + ' 天 · 资料提前备好，考前不慌！';
+          banner.style.display = 'block';
+        }
+      }
+
       /* ── Init ── */
+      renderCountdown();
       renderStats();
       renderFilters();
       renderGrid();
