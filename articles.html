@@ -3,229 +3,276 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>文章索引 · 大衍语文店</title>
-<meta name="description" content="大衍语文店全部免费阅读文章索引，共964篇，覆盖阅读/作文/古诗词/病句/文言文/名著等中考语文全专题。">
+<title>文章索引 · 大衍语文店 ·970篇免费中考语文文章</title>
+<meta name="description" content="大衍语文店免费文章索引，共970篇，覆盖字音字形、病句修改、文言文、古诗词、现代文阅读、作文、名著等中考语文全专题。">
+<link rel="canonical" href="https://wwq0327.github.io/dayan-products/articles.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:#f9f9f9;color:#222;line-height:1.6}
-.topbar{background:linear-gradient(135deg,#c0392b,#e74c3c);color:#fff;text-align:center;padding:12px;font-size:14px}
-.topbar a{color:#fff;text-decoration:underline}
-.container{max-width:960px;margin:0 auto;padding:0 16px}
-.page-header{padding:28px 0 20px;text-align:center}
-.page-header h1{font-size:1.8em;color:#c0392b;margin-bottom:8px}
-.page-header p{color:#888;font-size:0.9em}
-.search-row{display:flex;gap:10px;margin-bottom:16px}
-.search-input{flex:1;padding:9px 14px;border:2px solid #e0e0e0;border-radius:8px;font-size:0.95em;outline:none}
+body{font-family:'PingFang SC','Microsoft YaHei',sans-serif;background:#fafafa;color:#222;line-height:1.6}
+.topbar{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:14px 20px;font-size:14px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.topbar a{color:#a8d8ff;text-decoration:none}
+.topbar a:hover{color:#fff}
+.topbar-brand{font-weight:700;font-size:1em;color:#fff;text-decoration:none;display:flex;align-items:center;gap:6px}
+.topbar-brand span{font-size:1.1em}
+.topbar-links{display:flex;gap:16px;font-size:0.85em}
+
+/* Layout */
+.layout{display:flex;max-width:1200px;margin:0 auto;padding:20px;gap:20px;align-items:flex-start}
+.sidebar{width:200px;flex-shrink:0;position:sticky;top:20px}
+.sidebar-title{font-size:0.75em;font-weight:700;color:#aaa;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;padding-left:4px}
+.sidebar-cat{display:block;padding:8px 12px;border-radius:8px;font-size:0.88em;color:#444;text-decoration:none;transition:all .15s;margin-bottom:2px}
+.sidebar-cat:hover{background:#f0f0f0;color:#222}
+.sidebar-cat.active{background:#c0392b;color:#fff;font-weight:600}
+.sidebar-cat .cat-count{float:right;font-size:0.75em;opacity:.7}
+
+.main{flex:1;min-width:0}
+.search-row{display:flex;gap:8px;margin-bottom:16px}
+.search-input{flex:1;padding:10px 14px;border:2px solid #e0e0e0;border-radius:10px;font-size:0.95em;outline:none}
 .search-input:focus{border-color:#c0392b}
-.cat-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px;position:sticky;top:0;background:#f9f9f9;padding:10px 0;z-index:10;border-bottom:1px solid #eee}
-.cat-tab{padding:5px 12px;border-radius:20px;font-size:0.8em;cursor:pointer;border:1.5px solid #e0e0e0;background:#fff;color:#555;transition:all .15s}
-.cat-tab:hover{border-color:#c0392b;color:#c0392b}
-.cat-tab.active{background:#c0392b;color:#fff;border-color:#c0392b}
-.cat-block{margin-bottom:28px}
-.cat-heading{font-size:1em;color:#c0392b;padding-bottom:6px;margin-bottom:10px;border-bottom:2px solid #f0e0e0;font-weight:600;display:flex;justify-content:space-between;align-items:center}
-.cat-count{font-size:0.75em;color:#aaa;font-weight:400}
-.article-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
-.art-card{display:block;background:#fff;border:1px solid #eee;border-radius:8px;padding:12px 14px;text-decoration:none;color:inherit;transition:all .15s}
-.art-card:hover{border-color:#c0392b;box-shadow:0 2px 10px rgba(192,57,43,.1);transform:translateY(-1px)}
+.sort-select{padding:10px 12px;border:2px solid #e0e0e0;border-radius:10px;font-size:0.88em;background:#fff;outline:none}
+.sort-select:focus{border-color:#c0392b}
+
+.result-info{font-size:0.82em;color:#999;margin-bottom:12px}
+.result-info strong{color:#c0392b}
+
+.article-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-bottom:24px}
+.art-card{display:block;background:#fff;border:1px solid #eee;border-radius:12px;padding:16px 18px;text-decoration:none;color:inherit;transition:all .15s}
+.art-card:hover{border-color:#c0392b;box-shadow:0 3px 12px rgba(192,57,43,.1);transform:translateY(-2px)}
+.art-cat{display:inline-block;font-size:0.68em;font-weight:700;color:#c0392b;background:#fdf2f2;padding:2px 8px;border-radius:50px;margin-bottom:7px}
 .art-title{font-size:0.88em;font-weight:600;color:#222;margin-bottom:5px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.art-desc{font-size:0.76em;color:#999;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.footer{text-align:center;padding:28px;color:#bbb;font-size:0.8em}
-.back-link{text-align:center;margin:14px 0}
-.back-link a{color:#c0392b;text-decoration:none;font-size:0.9em}
-.empty-search{padding:40px;text-align:center;color:#aaa;font-size:0.95em}
+.art-desc{font-size:0.76em;color:#999;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.art-date{font-size:0.7em;color:#ccc;margin-top:6px}
+
+.empty-search{padding:48px;text-align:center;color:#aaa;font-size:1em;border:2px dashed #e0e0e0;border-radius:12px}
+
+/* Pagination */
 .pagination{display:flex;justify-content:center;align-items:center;gap:6px;margin:24px 0;flex-wrap:wrap}
 .pg-info{font-size:0.82em;color:#999;margin:0 8px}
-.pg-btn{padding:5px 14px;border:1.5px solid #e0e0e0;border-radius:6px;background:#fff;color:#555;font-size:0.85em;cursor:pointer;text-decoration:none;transition:all .15s}
+.pg-btn{padding:6px 14px;border:1.5px solid #e0e0e0;border-radius:8px;background:#fff;color:#555;font-size:0.85em;cursor:pointer;text-decoration:none;transition:all .15s}
 .pg-btn:hover{border-color:#c0392b;color:#c0392b}
 .pg-btn.active{background:#c0392b;color:#fff;border-color:#c0392b}
-.pg-btn.disabled{opacity:0.4;pointer-events:none}
-.page-size-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
-.page-size-sel{font-size:0.82em;color:#666;padding:5px 10px;border:1.5px solid #e0e0e0;border-radius:6px;background:#fff}
-@media(max-width:600px){.article-list{grid-template-columns:1fr}}
+.pg-btn.disabled{opacity:.4;pointer-events:none}
+
+.footer{text-align:center;padding:28px;color:#bbb;font-size:0.8em;border-top:1px solid #eee;margin-top:20px}
+.footer a{color:#c0392b;text-decoration:none}
+
+/* Mobile */
+@media(max-width:768px){
+  .layout{flex-direction:column;padding:12px}
+  .sidebar{width:100%;position:static;display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .sidebar-title{display:none}
+  .sidebar-cat{display:inline-block;font-size:.8em;padding:5px 12px;border:1.5px solid #e0e0e0;border-radius:50px;background:#fff}
+  .sidebar-cat.active{background:#c0392b;color:#fff;border-color:#c0392b}
+  .article-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
-<div class="topbar">📖 大衍语文店免费文章索引 · 共<strong id="totalCount">–</strong>篇 · <a href="index.html">← 返回店铺首页</a></div>
-<div class="container">
-<div class="page-header"><h1>📚 文章索引</h1><p>免费阅读文章，可直接点击阅读全文</p></div>
-<div class="search-row">
-  <input class="search-input" id="searchInput" placeholder="搜索文章标题或关键词…" autocomplete="off">
+<div class="topbar">
+  <a href="index.html" class="topbar-brand"><span>🔮</span> 大衍语文店</a>
+  <div class="topbar-links">
+    <a href="index.html">🏠 首页</a>
+    <a href="index.html#products">🛒 付费资料</a>
+  </div>
 </div>
-<div class="page-size-row">
-  <div class="cat-tabs" id="catTabs" style="position:static;background:none;border:none;padding:0"></div>
-  <select class="page-size-sel" id="pageSizeSel">
-    <option value="20">每页20篇</option>
-    <option value="50" selected>每页50篇</option>
-    <option value="100">每页100篇</option>
-  </select>
+
+<div class="layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-title">专题分类</div>
+    <a href="?cat=all" class="sidebar-cat" id="cat-all">全部 <span class="cat-count" id="cnt-all">–</span></a>
+    <a href="?cat=综合备考" class="sidebar-cat" id="cat-综合备考">🎯 综合备考 <span class="cat-count" id="cnt-综合备考">–</span></a>
+    <a href="?cat=基础知识" class="sidebar-cat" id="cat-基础知识">🔤 基础知识<span class="cat-count" id="cnt-基础知识">–</span></a>
+    <a href="?cat=病句修改" class="sidebar-cat" id="cat-病句修改">✏️ 病句修改 <span class="cat-count" id="cnt-病句修改">–</span></a>
+    <a href="?cat=成语标点" class="sidebar-cat" id="cat-成语标点">📝 成语标点 <span class="cat-count" id="cnt-成语标点">–</span></a>
+    <a href="?cat=文言文" class="sidebar-cat" id="cat-文言文">📜 文言文 <span class="cat-count" id="cnt-文言文">–</span></a>
+    <a href="?cat=古诗词" class="sidebar-cat" id="cat-古诗词">📖 古诗词 <span class="cat-count" id="cnt-古诗词">–</span></a>
+    <a href="?cat=现代文" class="sidebar-cat" id="cat-现代文">📚 现代文 <span class="cat-count" id="cnt-现代文">–</span></a>
+    <a href="?cat=作文" class="sidebar-cat" id="cat-作文">✒️ 作文 <span class="cat-count" id="cnt-作文">–</span></a>
+    <a href="?cat=名著导读" class="sidebar-cat" id="cat-名著导读">🏛️ 名著导读 <span class="cat-count" id="cnt-名著导读">–</span></a>
+  </aside>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="search-row">
+      <input class="search-input" id="searchInput" placeholder="搜索文章标题或关键词…" autocomplete="off">
+      <select class="sort-select" id="sortSel">
+        <option value="default">默认排序</option>
+        <option value="date-desc">最新优先</option>
+        <option value="title">按标题</option>
+      </select>
+    </div>
+
+    <div class="result-info" id="resultInfo"></div>
+    <div id="content"></div>
+    <div class="pagination" id="pagination"></div>
+  </div>
 </div>
-<div id="content"></div>
-<div class="pagination" id="pagination"></div>
-<div class="back-link"><a href="index.html">← 返回大衍语文店首页</a></div>
+
+<div class="footer">
+  <a href="index.html">← 返回大衍语文店首页</a> · Powered by <strong>大衍神君 AI</strong>
 </div>
-<div class="footer">Powered by <strong>大衍神君 AI</strong> · 大衍语文店</div>
 
 <script src="js/data.js"></script>
 <script>
 (function() {
-  const PAGE_SIZE_DEFAULT = 50;
+  // ── Category mapping ──
+  // Maps our subject categories to keyword patterns in titles/summaries/tags
+  const CAT_KEYWORDS = {
+    '综合备考': ['中考','备考','复习计划','冲刺','考场','考前','应试','真题','南充','一模','二模','三模','诊断','估分','全攻略','30天','全年','万能攻略','复习','一模','二轮','三轮','模拟','适应性'],
+    '基础知识': ['拼音','字音','字形','字义','同义词','反义词','多音字','易错字'],
+    '病句修改': ['病句','语病','搭配不当','语序不当','句式杂糅','成分残缺','成分赘余','表意不明','不合逻辑'],
+    '成语标点': ['成语','标点','标点符号','引号','冒号','分号','破折号','省略号'],
+    '文言文': ['文言','虚词','实词','词类活用','古今异义','特殊句式','宾语前置','状语后置','定语后置','被动句','判断句','省略句','断句','翻译','文言文阅读'],
+    '古诗词': ['古诗','古诗词','诗词鉴赏','诗歌','默写','名句','意象','情感','主题','手法','修辞','诗句','诗词','古体诗','近体诗'],
+    '现代文': ['现代文','散文','说明文','议论文','小说','记叙文','阅读','答题技巧','答题公式','文章分析','段落作用','句子赏析','词语理解','内容概括','中心思想'],
+    '作文': ['作文','写作','开头','结尾','素材','立意','结构','层次','议论文','记叙文','真情','语言','细节','描写','命题','半命题','话题'],
+    '名著导读': ['名著','导读','西游记','红楼梦','水浒传','骆驼祥子','海底两万里','昆虫记','朝花夕拾','呐喊','红岩','艾青诗选']
+  };
+
+  const PAGE_SIZE_DEFAULT = 30;
   let activeCat = 'all';
   let searchQuery = '';
-  let pageSize = PAGE_SIZE_DEFAULT;
+  let sortOrder = 'default';
   let currentPage = 1;
 
-  // Collect all a* entries (articles only, not products)
+  // All articles (id starts with 'a')
   const ALL = DATA.materials.filter(m => m.id.startsWith('a'));
-  const totalEl = document.getElementById('totalCount');
-  totalEl.textContent = ALL.length;
 
-  function buildTabs() {
-    const cats = ['全部','专项训练','文言文','现代文','综合备考','读书笔记','工具课件','壁纸贴纸'];
-    let html = '';
-    cats.forEach(c => {
-      const catId = c === '全部' ? 'all' : c;
-      const count = c === '全部' ? ALL.length : ALL.filter(a => a.category === c).length;
-      if (c === '全部' || count > 0) {
-        html += '<button class="cat-tab' + (activeCat === catId ? ' active' : '') + '" data-cat="' + catId + '">' + c + ' ' + count + '</button>';
+  // ── Categorize each article ──
+  function getSubjectCat(article) {
+    const text = (article.title + ' ' + (article.summary || '') + ' ' + ((article.tags||[]).join(' '))).toLowerCase();
+    for (const [cat, kws] of Object.entries(CAT_KEYWORDS)) {
+      for (const kw of kws) {
+        if (text.includes(kw.toLowerCase())) return cat;
       }
-    });
-    document.getElementById('catTabs').innerHTML = html;
-    document.querySelectorAll('.cat-tab').forEach(btn => {
-      btn.addEventListener('click', () => {
-        activeCat = btn.dataset.cat;
-        currentPage = 1;
-        buildTabs();
-        render();
-      });
-    });
+    }
+    return null;
+  }
+
+  // ── Build count per subject ──
+  const catCounts = { all: ALL.length };
+  for (const cat of Object.keys(CAT_KEYWORDS)) catCounts[cat] = 0;
+  ALL.forEach(a => {
+    const cat = getSubjectCat(a);
+    if (cat && catCounts[cat] !== undefined) catCounts[cat]++;
+  });
+
+  // Update sidebar counts
+  for (const cat of Object.keys(catCounts)) {
+    const el = document.getElementById('cnt-' + cat);
+    if (el) el.textContent = catCounts[cat];
   }
 
   function getFiltered() {
     let items = ALL;
-    if (activeCat !== 'all') items = items.filter(a => a.category === activeCat);
+    if (activeCat !== 'all') {
+      items = items.filter(a => getSubjectCat(a) === activeCat);
+    }
     const q = searchQuery.trim().toLowerCase();
-    if (q) items = items.filter(a =>
-      a.title.toLowerCase().includes(q) || (a.summary && a.summary.toLowerCase().includes(q))
-    );
+    if (q) {
+      items = items.filter(a =>
+        a.title.toLowerCase().includes(q) ||
+        (a.summary && a.summary.toLowerCase().includes(q)) ||
+        (a.tags||[]).some(t => t.toLowerCase().includes(q))
+      );
+    }
+    // Sort
+    if (sortOrder === 'date-desc') {
+      items.sort((a,b) => (b.date||'').localeCompare(a.date||''));
+    } else if (sortOrder === 'title') {
+      items.sort((a,b) => a.title.localeCompare(b.title, 'zh'));
+    }
     return items;
+  }
+
+  function getLinkedFile(article) {
+    if (!article.content) return '#';
+    const m = article.content.match(/href="([^"]+\.html)"/);
+    return m ? m[1] : '#';
   }
 
   function render() {
     const items = getFiltered();
-    const totalPages = Math.max(1, Math.ceil(items.length / pageSize));
+    const totalPages = Math.max(1, Math.ceil(items.length / PAGE_SIZE_DEFAULT));
     if (currentPage > totalPages) currentPage = totalPages;
 
-    const start = (currentPage - 1) * pageSize;
-    const page = items.slice(start, start + pageSize);
+    const start = (currentPage - 1) * PAGE_SIZE_DEFAULT;
+    const page = items.slice(start, start + PAGE_SIZE_DEFAULT);
+
+    document.getElementById('resultInfo').innerHTML =
+      activeCat === 'all' && !searchQuery
+        ? '共<strong>' + ALL.length + '</strong> 篇免费文章'
+        : '找到 <strong>' + items.length + '</strong> 篇相关文章';
 
     const content = document.getElementById('content');
     if (page.length === 0) {
-      content.innerHTML = '<div class="empty-search">没有找到匹配的文章，试试其他关键词</div>';
+      content.innerHTML = '<div class="empty-search">没有找到匹配的文章，试试其他关键词或分类</div>';
       document.getElementById('pagination').innerHTML = '';
       return;
     }
 
-    // Group by category
-    const groups = {};
+    let html = '<div class="article-grid">';
     page.forEach(a => {
-      const cat = a.category;
-      if (!groups[cat]) groups[cat] = [];
-      groups[cat].push(a);
+      const href = getLinkedFile(a);
+      const titleEsc = a.title.replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      const descEsc = a.summary ? a.summary.replace(/</g,'&lt;').replace(/>/g,'&gt;') : '';
+      html += '<a class="art-card" href="' + href + '">';
+      html += '<div class="art-cat">' + (getSubjectCat(a) || '综合备考') + '</div>';
+      html += '<div class="art-title">' + titleEsc + '</div>';
+      if (descEsc) html += '<div class="art-desc">' + descEsc + '</div>';
+      if (a.date) html += '<div class="art-date">' + a.date + '</div>';
+      html += '</a>';
     });
-
-    let html = '';
-    const catOrder = ['专项训练','文言文','现代文','综合备考','读书笔记','工具课件','壁纸贴纸'];
-    catOrder.forEach(cat => {
-      const group = groups[cat];
-      if (!group || group.length === 0) return;
-      html += '<div class="cat-block">';
-      html += '<div class="cat-heading">' + cat + '<span class="cat-count">' + group.length + '篇</span></div>';
-      html += '<div class="article-list">';
-      group.forEach(a => {
-        const titleEsc = a.title.replace(/</g,'&lt;').replace(/>/g,'&gt;');
-        const descEsc = a.summary ? a.summary.replace(/</g,'&lt;').replace(/>/g,'&gt;') : '';
-        // find the linked file
-        const fnameMatch = a.content ? a.content.match(/href="([^"]+\.html)"/) : null;
-        const fname = fnameMatch ? fnameMatch[1] : '';
-        html += '<a class="art-card" href="' + fname + '">';
-        html += '<div class="art-title">' + titleEsc + '</div>';
-        if (descEsc) html += '<div class="art-desc">' + descEsc + '</div>';
-        html += '</a>';
-      });
-      html += '</div></div>';
-    });
-
+    html += '</div>';
     content.innerHTML = html;
 
     // Pagination
     const pg = document.getElementById('pagination');
-    const q = searchQuery.trim();
-    const hash = activeCat === 'all' ? '' : '#' + activeCat;
-
-    if (totalPages <= 1) {
-      pg.innerHTML = '';
-      return;
-    }
+    if (totalPages <= 1) { pg.innerHTML = ''; return; }
 
     let pgHtml = '';
-    const prevDisabled = currentPage === 1 ? ' disabled' : '';
-    const nextDisabled = currentPage === totalPages ? ' disabled' : '';
-    pgHtml += '<a href="?p=' + (currentPage - 1) + '&cat=' + activeCat + (q ? '&q=' + encodeURIComponent(q) : '') + '" class="pg-btn' + prevDisabled + '" onclick="if(this.classList.contains(\'disabled\'))return false">← 上一页</a>';
+    const q = searchQuery.trim();
+    const baseUrl = '?cat=' + activeCat + (q ? '&q=' + encodeURIComponent(q) : '') + '&sort=' + sortOrder + '&p=';
+
+    const prevDis = currentPage === 1 ? ' disabled' : '';
+    const nextDis = currentPage === totalPages ? ' disabled' : '';
+    pgHtml += '<a href="' + baseUrl + (currentPage-1) + '" class="pg-btn' + prevDis + '">← 上一页</a>';
     pgHtml += '<span class="pg-info">' + currentPage + ' / ' + totalPages + '</span>';
-    pgHtml += '<a href="?p=' + (currentPage + 1) + '&cat=' + activeCat + (q ? '&q=' + encodeURIComponent(q) : '') + '" class="pg-btn' + nextDisabled + '" onclick="if(this.classList.contains(\'disabled\'))return false">下一页 →</a>';
-
-    // Page number buttons
-    const maxShow = 7;
-    let startP = Math.max(1, currentPage - 3);
-    let endP = Math.min(totalPages, startP + maxShow - 1);
-    if (endP - startP < maxShow - 1) startP = Math.max(1, endP - maxShow + 1);
-
-    if (startP > 1) {
-      pgHtml = '<a href="?p=1' + hash + '" class="pg-btn">1</a>' + (startP > 2 ? '<span class="pg-info">…</span>' : '') + pgHtml;
-    }
-    // Insert page number buttons before next arrow
-    const nextBtn = pgHtml.lastIndexOf('>下一页');
-    const prefix = pgHtml.substring(0, nextBtn);
-    const suffix = pgHtml.substring(nextBtn);
-    let numBtns = '';
-    for (let p = startP; p <= endP; p++) {
-      if (p !== currentPage) numBtns += '<a href="?p=' + p + '&cat=' + activeCat + (q ? '&q=' + encodeURIComponent(q) : '') + '" class="pg-btn">' + p + '</a>';
-      else numBtns += '<span class="pg-btn active">' + p + '</span>';
-    }
-    pg.innerHTML = prefix + numBtns + suffix;
+    pgHtml += '<a href="' + baseUrl + (currentPage+1) + '" class="pg-btn' + nextDis + '">下一页 →</a>';
+    pg.innerHTML = pgHtml;
   }
 
-  // Init from URL params
+  // ── Init from URL ──
   const params = new URLSearchParams(location.search);
-  const urlPage = parseInt(params.get('p'));
-  const urlCat = params.get('cat');
-  const urlQ = params.get('q');
-  if (urlPage > 1) currentPage = urlPage;
-  if (urlCat && ['all','专项训练','文言文','现代文','综合备考','读书笔记','工具课件','壁纸贴纸'].includes(urlCat)) activeCat = urlCat;
-  if (urlQ) {
-    searchQuery = decodeURIComponent(urlQ);
-    document.getElementById('searchInput').value = searchQuery;
-  }
+  activeCat = params.get('cat') || 'all';
+  searchQuery = params.get('q') || '';
+  sortOrder = params.get('sort') || 'default';
+  currentPage = parseInt(params.get('p') || '1');
 
-  const pageSizeSel = document.getElementById('pageSizeSel');
-  pageSizeSel.value = String(pageSize);
-  pageSizeSel.addEventListener('change', () => {
-    pageSize = parseInt(pageSizeSel.value);
-    currentPage = 1;
-    render();
-    window.scrollTo(0, 0);
+  if (searchQuery) document.getElementById('searchInput').value = searchQuery;
+  if (sortOrder !== 'default') document.getElementById('sortSel').value = sortOrder;
+
+  // Update active sidebar tab
+  document.querySelectorAll('.sidebar-cat').forEach(el => {
+    el.classList.toggle('active', el.dataset.cat === activeCat);
   });
 
-  buildTabs();
-  render();
-
+  // Events
   document.getElementById('searchInput').addEventListener('input', function() {
     searchQuery = this.value;
     currentPage = 1;
     render();
   });
+  document.getElementById('sortSel').addEventListener('change', function() {
+    sortOrder = this.value;
+    currentPage = 1;
+    render();
+  });
+
+  render();
 })();
 </script>
 </body>

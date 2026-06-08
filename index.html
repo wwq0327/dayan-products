@@ -3,239 +3,457 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>大衍语文店 · 中考语文专项复习资料</title>
-  <meta name="description" content="中考语文专项复习资料小店，含病句修改、文言虚词、名著考点、散文/说明文/议论文阅读等。由大衍神君AI打造，王老师（资深语文教师）审核。">
-  <meta name="keywords" content="中考语文,语文复习资料,病句修改,文言虚词,名著考点,初中语文">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <meta property="og:title" content="大衍语文店 · 中考语文专项复习资料">
-  <meta property="og:description" content="23份中考语文专项复习资料，含病句修改、文言虚词、名著考点、作文模板等。适用南充中考备考。">
+  <title>大衍语文店 · 南充中考语文备考资料站</title>
+  <meta name="description" content="大衍语文店：南充中考语文备考资料站，含970篇免费阅读文章+25份付费精品资料，覆盖病句/文言文/古诗词/阅读/作文/名著六大专题。">
+  <meta name="keywords" content="中考语文,南充中考,语文复习,病句修改,文言文,古诗词,名著,作文模板">
+  <link rel="canonical" href="https://wwq0327.github.io/dayan-products/">
+  <meta property="og:title" content="大衍语文店 · 南充中考语文备考资料站">
+  <meta property="og:description" content="970篇免费文章 + 25份精品资料，涵盖中考语文全专题。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://wwq0327.github.io/dayan-products/">
-  <meta property="og:image" content="https://wwq0327.github.io/dayan-products/_previews/bingju-01-preview.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="大衍语文店 · 中考语文专项复习资料">
-  <meta name="twitter:description" content="中考语文专项复习资料小店，含病句修改、文言虚词、名著考点等。">
-  <link rel="canonical" href="https://wwq0327.github.io/dayan-products/">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Hero ── */
+    .hero {
+      background: linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);
+      color:#fff;
+      padding:52px 24px 44px;
+      text-align:center;
+    }
+    .hero-eyebrow {
+      display:inline-block;
+      background:rgba(255,255,255,0.12);
+      border:1px solid rgba(255,255,255,0.25);
+      border-radius:50px;
+      padding:4px 14px;
+      font-size:0.78em;
+      color:#a8d8ff;
+      margin-bottom:16px;
+    }
+    .hero h1 {
+      font-size:2.2em;
+      font-weight:700;
+      margin-bottom:10px;
+      letter-spacing:-0.02em;
+    }
+    .hero-sub {
+      font-size:1.05em;
+      color:#c8d6e8;
+      margin-bottom:28px;
+      line-height:1.6;
+    }
+    .hero-stats {
+      display:flex;
+      justify-content:center;
+      gap:32px;
+      margin-bottom:30px;
+      flex-wrap:wrap;
+    }
+    .hero-stat {
+      text-align:center;
+    }
+    .hero-stat-num {
+      font-size:1.8em;
+      font-weight:700;
+      color:#ffd166;
+      display:block;
+    }
+    .hero-stat-label {
+      font-size:0.8em;
+      color:#a8d8ff;
+    }
+    .hero-cta-row {
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-bottom:16px;
+    }
+    .btn-primary {
+      background:#c0392b;
+      color:#fff;
+      padding:13px 32px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:700;
+      font-size:1em;
+      display:inline-block;
+      transition:background .2s;
+    }
+    .btn-primary:hover { background:#a93226; }
+    .btn-secondary {
+      background:rgba(255,255,255,0.1);
+      color:#fff;
+      border:1.5px solid rgba(255,255,255,0.35);
+      padding:12px 28px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:0.95em;
+      display:inline-block;
+      transition:background .2s;
+    }
+    .btn-secondary:hover { background:rgba(255,255,255,0.2); }
+    .hero-note {
+      font-size:0.75em;
+      color:#6b8ab8;
+      margin-top:10px;
+    }
+
+    /* ── Quick Access Grid ── */
+    .section { padding:40px 24px; }
+    .section-alt { background:#f5f5f5; }
+    .section-header {
+      text-align:center;
+      margin-bottom:28px;
+    }
+    .section-header h2 {
+      font-size:1.5em;
+      color:#1a1a2e;
+      margin-bottom:6px;
+    }
+    .section-header p {
+      color:#888;
+      font-size:0.9em;
+    }
+    .subject-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+      gap:14px;
+      max-width:900px;
+      margin:0 auto;
+    }
+    .subject-card {
+      background:#fff;
+      border:1.5px solid #e8e8e8;
+      border-radius:14px;
+      padding:20px;
+      text-decoration:none;
+      color:inherit;
+      display:block;
+      transition:all .2s;
+    }
+    .subject-card:hover {
+      border-color:#c0392b;
+      box-shadow:0 4px 16px rgba(192,57,43,.12);
+      transform:translateY(-2px);
+    }
+    .subject-icon { font-size:2em; margin-bottom:8px; }
+    .subject-name { font-weight:600; color:#222; margin-bottom:4px; font-size:0.95em; }
+    .subject-count { font-size:0.78em; color:#aaa; }
+
+    /* ── Featured Articles ── */
+    .featured-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+      gap:16px;
+      max-width:960px;
+      margin:0 auto;
+    }
+    .feat-card {
+      display:block;
+      background:#fff;
+      border:1px solid #eee;
+      border-radius:12px;
+      padding:18px 20px;
+      text-decoration:none;
+      color:inherit;
+      transition:all .15s;
+    }
+    .feat-card:hover { border-color:#c0392b; box-shadow:0 3px 12px rgba(192,57,43,.1); transform:translateY(-1px); }
+    .feat-cat {
+      display:inline-block;
+      font-size:0.7em;
+      font-weight:600;
+      color:#c0392b;
+      background:#fdf2f2;
+      padding:2px 10px;
+      border-radius:50px;
+      margin-bottom:8px;
+    }
+    .feat-title {
+      font-size:0.9em;
+      font-weight:600;
+      color:#222;
+      line-height:1.4;
+      margin-bottom:6px;
+      display:-webkit-box;
+      -webkit-line-clamp:2;
+      -webkit-box-orient:vertical;
+      overflow:hidden;
+    }
+    .feat-desc {
+      font-size:0.78em;
+      color:#999;
+      line-height:1.5;
+      display:-webkit-box;
+      -webkit-line-clamp:2;
+      -webkit-box-orient:vertical;
+      overflow:hidden;
+    }
+    .feat-more {
+      text-align:center;
+      margin-top:24px;
+    }
+    .feat-more a {
+      color:#c0392b;
+      text-decoration:none;
+      font-size:0.9em;
+      font-weight:600;
+    }
+
+    /* ── Products ── */
+    .products-scroll {
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+      gap:16px;
+      max-width:960px;
+      margin:0 auto;
+    }
+    .prod-card {
+      background:#fff;
+      border:1px solid #eee;
+      border-radius:12px;
+      padding:16px;
+      cursor:pointer;
+      transition:all .15s;
+    }
+    .prod-card:hover { border-color:#c0392b; box-shadow:0 3px 12px rgba(192,57,43,.1); }
+    .prod-img { width:100%; height:120px; object-fit:cover; border-radius:8px; background:#f0f0f0; margin-bottom:10px; }
+    .prod-cat { font-size:0.7em; color:#c0392b; font-weight:600; margin-bottom:4px; }
+    .prod-title { font-size:0.88em; font-weight:600; color:#222; margin-bottom:6px; line-height:1.3; }
+    .prod-price { font-size:1em; font-weight:700; color:#c0392b; }
+    .prod-all { text-align:center; margin-top:20px; }
+
+    /* ── Nav tabs ── */
+    .nav-tabs {
+      display:flex;
+      justify-content:center;
+      gap:8px;
+      margin-bottom:24px;
+      flex-wrap:wrap;
+    }
+    .nav-tab {
+      padding:7px 18px;
+      border-radius:50px;
+      font-size:0.85em;
+      cursor:pointer;
+      border:1.5px solid #ddd;
+      background:#fff;
+      color:#555;
+      text-decoration:none;
+      display:inline-block;
+      transition:all .15s;
+    }
+    .nav-tab:hover, .nav-tab.active { background:#c0392b; color:#fff; border-color:#c0392b; }
+
+    /* ── Footer ── */
+    .footer { text-align:center; padding:28px; color:#aaa; font-size:0.82em; border-top:1px solid #eee; margin-top:20px; }
+    .footer a { color:#c0392b; }
+  </style>
 </head>
 <body>
 
-  <header class="header">
-  <div id="countdown-banner" style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:#fff;text-align:center;padding:10px 16px;font-size:14px;font-weight:600;display:none">
-    <span id="countdown-text"></span>
-    <a href="#buy-now" style="color:#ffeaa7;text-decoration:underline;margin-left:8px">立即抢购→</a>
-  </div>
-  <div style="background:linear-gradient(135deg,#c0392b,#e74c3c);color:#fff;text-align:center;padding:12px;font-size:15px;font-weight:600">
-    🔥 南充中考全年备考 · <strong>病句/虚词/名著/阅读</strong> 专项资料助你提分！
-    <a href="articles.html" style="color:#fff;text-decoration:underline;margin-left:8px">📚 全部文章→</a>
-  </div>
-    <div class="container">
-      <div class="header-inner">
-        <div class="header-left">
-          <h1 class="header-title">🔮 大衍语文店</h1>
-          <p class="header-subtitle">中考语文专项复习资料 · AI助教资源店</p>
-        </div>
-        <div class="header-right">
-          <div class="search-bar">
-            <input class="search-input" type="text" id="searchInput" placeholder="搜索产品名称、分类…" autocomplete="off">
-          </div>
-          <div class="header-badge"><a href="articles.html" style="color:inherit;text-decoration:none">📚 文章索引</a></div>
-        </div>
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-eyebrow">🔥 南充中考语文备考首选站</div>
+    <h1>🔮 大衍语文店</h1>
+    <p class="hero-sub">资深语文教师 + AI 打造 · 覆盖中考语文六大专题<br>免费文章随读 + 付费精品资料</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num">970+</span>
+        <span class="hero-stat-label">免费文章</span>
       </div>
-
-      <div class="stats-bar" id="statsBar"></div>
-
-      <div class="filter-bar" id="filterBar"></div>
-    </div>
-  </header>
-
-  <main class="container">
-    <div class="grid" id="grid"></div>
-
-
-  <div id="buy-now" style="background:#fff3f3;border:2px solid #c0392b;border-radius:12px;padding:20px 24px;margin:20px auto;max-width:750px;text-align:center;">
-    <div style="display:inline-block;background:#c0392b;color:#fff;font-size:12px;padding:3px 10px;border-radius:50px;font-weight:600;margin-bottom:10px">🔥 热销中 · 已有大量考生购买</div>
-    <p style="margin:0 0 8px;font-size:1.05rem;color:#333;"><strong>📦 想买资料？30秒下单，立刻发货：</strong></p>
-    <p style="margin:0 0 14px;font-size:0.85rem;color:#666;">发邮件到 <strong><a href="mailto:sjfc_0224@qq.com?subject=病句修改&body=您好，我想购买大衍语文店的复习资料，请发给我。">sjfc_0224@qq.com</a></strong>，标题写「病句修改」或「虚词」等任意产品名即可自动发货，<strong style="color:#c0392b">几分钟内收到资料</strong></p>
-    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:10px">
-      <a href="mailto:sjfc_0224@qq.com?subject=病句修改&body=您好，我想购买大衍语文店的复习资料，请发给我。" style="background:#c0392b;color:#fff;padding:12px 28px;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;display:inline-block;">📧 一键发邮件下单 →</a>
-      <a href="#contact-section" style="background:#fff;color:#c0392b;border:2px solid #c0392b;padding:12px 28px;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;display:inline-block;">💬 查看购买流程</a>
-    </div>
-    <p style="margin:0;font-size:0.78rem;color:#999;">⚠️ 自动发货无需客服 · 邮箱24小时可发 · 资料直接发送到您的邮箱</p>
-  </div>
-
-    <div class="contact-section" id="contact-section">
-      <div class="contact-box two-col">
-        <div class="two-col-left">
-          <div class="qr-wrap">
-            <div class="qr-banner">推荐使用微信支付</div>
-            <img src="wechat-pay.jpg" alt="微信支付二维码" class="qr-img" onerror="this.parentElement.style.display='none'">
-            <div class="qr-footer">
-              <span class="wechat-icon-sm"></span>
-              <span>微信支付</span>
-            </div>
-          </div>
-        </div>
-        <div class="two-col-right">
-          <h3>📧 如何购买 · 30秒搞定</h3>
-          <div class="email-highlight">
-            <a href="mailto:sjfc_0224@qq.com?subject=病句修改&body=您好，我想购买大衍语文店的复习资料，请发给我。">sjfc_0224@qq.com</a>
-          </div>
-          <div style="background:#fff8f8;border:1px solid #ffcccc;border-radius:8px;padding:10px 14px;margin-bottom:12px;text-align:left">
-            <span style="color:#c0392b;font-weight:700">⏱️ 3步完成购买，全程不超过30秒</span>
-          </div>
-          <div class="pay-steps">
-            <ol>
-              <li><strong>选产品</strong> — 找到想要的学习资料</li>
-              <li><strong>付款</strong> — 微信扫码或转账 <strong>¥9.9起</strong>，备注产品名</li>
-              <li><strong>发邮件</strong> — 标题写产品名称，如<a href="mailto:sjfc_0224@qq.com?subject=病句修改">「病句修改」</a></li>
-              <li><strong>自动发货</strong> — 资料直接发送到您的邮箱，几分钟内收到</li>
-            </ol>
-          </div>
-          <p class="buy-reminder">⚠️ 邮件主题写产品名即可自动发货，无需等待客服回复</p>
-        </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">25</span>
+        <span class="hero-stat-label">精品资料</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">6</span>
+        <span class="hero-stat-label">专题覆盖</span>
       </div>
     </div>
-  </main>
+    <div class="hero-cta-row">
+      <a href="articles.html" class="btn-primary">📚 探索免费文章</a>
+      <a href="#products" class="btn-secondary">🛒 查看付费资料</a>
+    </div>
+    <p class="hero-note">资料持续更新 · 邮件下单即发货 · 24小时内到手</p>
+  </div>
 
-  <footer class="footer">
+  <!-- 按专题浏览 -->
+  <div class="section">
+    <div class="section-header">
+      <h2>📖 按专题浏览</h2>
+      <p>选择你需要强化的题型，快速找到相关文章</p>
+    </div>
+    <div class="subject-grid">
+      <a href="articles.html?cat=基础知识" class="subject-card">
+        <div class="subject-icon">🔤</div>
+        <div class="subject-name">字音·字形·拼音</div>
+        <div class="subject-count">字音字形专项</div>
+      </a>
+      <a href="articles.html?cat=病句修改" class="subject-card">
+        <div class="subject-icon">✏️</div>
+        <div class="subject-name">病句修改</div>
+        <div class="subject-count">辨析与修改技巧</div>
+      </a>
+      <a href="articles.html?cat=成语标点" class="subject-card">
+        <div class="subject-icon">📝</div>
+        <div class="subject-name">成语·标点</div>
+        <div class="subject-count">成语运用·标点符号</div>
+      </a>
+      <a href="articles.html?cat=文言文" class="subject-card">
+        <div class="subject-icon">📜</div>
+        <div class="subject-name">文言文</div>
+        <div class="subject-count">实词·虚词·翻译</div>
+      </a>
+      <a href="articles.html?cat=古诗词" class="subject-card">
+        <div class="subject-icon">📖</div>
+        <div class="subject-name">古诗词鉴赏</div>
+        <div class="subject-count">意象·情感·默写</div>
+      </a>
+      <a href="articles.html?cat=现代文" class="subject-card">
+        <div class="subject-icon">📖</div>
+        <div class="subject-name">现代文阅读</div>
+        <div class="subject-count">散文·说明文·议论文</div>
+      </a>
+      <a href="articles.html?cat=名著导读" class="subject-card">
+        <div class="subject-icon">🏛️</div>
+        <div class="subject-name">名著导读</div>
+        <div class="subject-count">《红楼梦》·《西游记》</div>
+      </a>
+      <a href="articles.html?cat=作文" class="subject-card">
+        <div class="subject-icon">✒️</div>
+        <div class="subject-name">作文</div>
+        <div class="subject-count">开头结尾·素材·模板</div>
+      </a>
+      <a href="articles.html?cat=综合备考" class="subject-card">
+        <div class="subject-icon">🎯</div>
+        <div class="subject-name">综合备考</div>
+        <div class="subject-count">真题·计划·冲刺</div>
+      </a>
+    </div>
+   <div class="feat-more">
+      <a href="articles.html">→ 查看全部970篇文章</a>
+    </div>
+  </div>
+
+  <!-- 精选文章 -->
+  <div class="section section-alt">
+    <div class="section-header">
+      <h2>⭐ 精选文章</h2>
+      <p>点击即可免费阅读</p>
+    </div>
+    <div class="subject-grid" style="max-width:900px">
+      <a href="article-2026万全攻略.html" class="feat-card">
+        <div class="feat-cat">综合备考</div>
+        <div class="feat-title">2026南充中考语文备考全攻略</div>
+        <div class="feat-desc">考前一周备考策略+各题型时间分配+考场注意事项</div>
+      </a>
+      <a href="article-30day-plan.html" class="feat-card">
+        <div class="feat-cat">综合备考</div>
+        <div class="feat-title">2026南充中考语文最后30天冲刺计划</div>
+        <div class="feat-desc">每日任务明确，30天从基础到冲刺</div>
+      </a>
+      <a href="article-nanchong-zhenti-fenxi.html" class="feat-card">
+        <div class="feat-cat">综合备考</div>
+        <div class="feat-title">2026南充中考语文真题深度分析</div>
+        <div class="feat-desc">最新真题逐题分析，把握命题规律</div>
+      </a>
+      <a href="article-bingju-xiugai-jishu.html" class="feat-card">
+        <div class="feat-cat">病句修改</div>
+        <div class="feat-title">病句修改技术：六类题型全覆盖</div>
+        <div class="feat-desc">句式杂糅、搭配不当、语序不当全攻略</div>
+      </a>
+      <a href="article-wenyanwen-xuci-zongjie.html" class="feat-card">
+        <div class="feat-cat">文言文</div>
+        <div class="feat-title">文言虚词18个核心用法总结</div>
+        <div class="feat-desc">之、其、而、以、于…附例句和辨析</div>
+      </a>
+      <a href="article-yilunwen-dati-taolou.html" class="feat-card">
+        <div class="feat-cat">议论文阅读</div>
+        <div class="feat-title">议论文阅读答题套路与满分公式</div>
+        <div class="feat-desc">论点·论据·论证思路全攻克</div>
+      </a>
+      <a href="article-zuowen-kaitou-jiewei-daquan.html" class="feat-card">
+        <div class="feat-cat">作文</div>
+        <div class="feat-title">作文开头结尾万能公式大全</div>
+        <div class="feat-desc">20种开头+20种结尾模板，考场直接用</div>
+      </a>
+      <a href="article-mingzhu-changkao.html" class="feat-card">
+        <div class="feat-cat">名著导读</div>
+        <div class="feat-title">名著常考情节题与人物形象分析</div>
+        <div class="feat-desc">《西游记》《骆驼祥子》《红楼梦》常考情节</div>
+      </a>
+    </div>
+    <div class="feat-more">
+      <a href="articles.html">→ 浏览全部文章</a>
+    </div>
+  </div>
+
+  <!-- 付费资料 -->
+  <div class="section" id="products">
+    <div class="section-header">
+      <h2>🛒 付费精品资料</h2>
+      <p>系统复习首选 · 邮件下单即发 · ¥9.9起</p>
+    </div>
+    <div id="productGrid"></div>
+    <div class="prod-all">
+      <a href="mailto:sjfc_0224@qq.com?subject=资料目录&body=您好，我想了解大衍语文店的付费资料目录，请发给我。" class="btn-primary">📧 邮件咨询/下单</a>
+    </div>
+  </div>
+
+ <div class="footer">
     <p>Powered by <strong>大衍神君 AI Agent</strong> · 王老师团队</p>
-    <p style="margin-top:8px"><a href="https://wwq0327.github.io/dayan-products/">https://wwq0327.github.io/dayan-products/</a></p>
-  </footer>
+    <p style="margin-top:8px">
+      <a href="https://wwq0327.github.io/dayan-products/">网站首页</a> ·
+      <a href="articles.html">📚 文章索引</a> ·
+      <a href="sitemap.html">🗺️ 内容导览</a>
+    </p>
+  </div>
 
   <script src="js/data.js"></script>
   <script>
     (function() {
-      let activeCategory = 'all';
-      let searchQuery = '';
+      // Render products (p01-p25 only)
+      const products = DATA.materials.filter(m => m.id.startsWith('p'));
+      const grid = document.getElementById('productGrid');
+      const imgMap = {
+        '病句修改': 'bingju-01-preview.png',
+        '拼音专项复习清单': 'ziyin-13-preview.png',
+        '虚词辨析': 'xuci-03-preview.png',
+        '古诗词答题': 'gushici-04-preview.png',
+        '名著必背': 'mingzhu-05-preview.png',
+        '散文阅读': 'shuomingshi-06-preview.png',
+        '说明文阅读': 'shuomingshi-06-preview.png',
+        '议论文阅读': 'yilunwen-07-preview.png',
+        '万能写作模板': 'jixuwen-08-preview.png',
+        '万能答题模板': 'jixuwen-08-preview.png',
+        '43天语文': '43tian-09-preview.png',
+        '六年对比报告': '6nian-10-preview.png',
+        '学习资料库': 'xuexiziliao-11-preview.png',
+        '成语运用': 'chengyu-12-preview.png',
+        '字音字形': 'ziyin-13-preview.png'
+      };
 
-      /* ── Render Stats ── */
-      function renderStats() {
-        const stats = DATA.getCategoryStats();
-        const total = DATA.materials.length;
-        let html = '<div class="stat-item"><span class="stat-number">' + total + '</span> 份资料</div>';
-        DATA.categories.forEach(c => {
-          const count = stats[c.id] || 0;
-          if (count > 0) {
-            html += '<div class="stat-item"><span class="stat-number">' + count + '</span> ' + c.name + '</div>';
-          }
-        });
-        document.getElementById('statsBar').innerHTML = html;
-      }
-
-      /* ── Render Filter Buttons ── */
-      function renderFilters() {
-        const stats = DATA.getCategoryStats();
-        const total = DATA.materials.length;
-        let html = '<button class="filter-btn' + (activeCategory === 'all' ? ' active' : '') + '" data-category="all">全部 <span class="count">' + total + '</span></button>';
-        DATA.categories.forEach(c => {
-          const count = stats[c.id] || 0;
-          if (count === 0) return;
-          html += '<button class="filter-btn' + (activeCategory === c.id ? ' active' : '') + '" data-category="' + c.id + '">' + c.name + ' <span class="count">' + count + '</span></button>';
-        });
-        document.getElementById('filterBar').innerHTML = html;
-
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-          btn.addEventListener('click', function() {
-            activeCategory = this.dataset.category;
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-            renderGrid();
-          });
-        });
-      }
-
-      /* ── Render Card Grid ── */
-      function renderGrid() {
-        let items = DATA.getByCategory(activeCategory);
-        const q = searchQuery.trim().toLowerCase();
-        if (q) {
-          items = items.filter(m =>
-            m.title.toLowerCase().includes(q) ||
-            m.summary.toLowerCase().includes(q) ||
-            m.tags.some(t => t.includes(q)) ||
-            DATA.getCategoryName(m.category).includes(q)
-          );
+      let html = '<div class="products-scroll">';
+      products.forEach(p => {
+        let img = '_previews/placeholder.png';
+        for (const [kw, fn] of Object.entries(imgMap)) {
+          if (p.title.includes(kw)) { img = '_previews/' + fn; break; }
         }
-
-        const grid = document.getElementById('grid');
-        if (items.length === 0) {
-          grid.innerHTML = '<div class="empty-state"><p>没有找到匹配的产品，试试其他关键词</p></div>';
-          return;
-        }
-
-        let html = '';
-        items.forEach(m => {
-          const catName = DATA.getCategoryName(m.category);
-          const imgMap = {
-            '病句修改': 'bingju-01-preview.png','拼音专项复习清单': 'ziyin-13-preview.png',
-            '虚词辨析': 'xuci-03-preview.png','虚词复习专题': 'xuci-03-preview.png',
-            '古诗词答题': 'gushici-04-preview.png','古诗词分类整理': 'gushici-04-preview.png',
-            '名著必背': 'mingzhu-05-preview.png','散文阅读': 'shuomingshi-06-preview.png',
-            '说明文阅读': 'shuomingshi-06-preview.png','议论文阅读': 'yilunwen-07-preview.png',
-            '万能写作模板': 'jixuwen-08-preview.png','万能答题模板': 'jixuwen-08-preview.png',
-            '43天语文': '43tian-09-preview.png','六年对比报告': '6nian-10-preview.png',
-            '学习资料库': 'xuexiziliao-11-preview.png','成语运用': 'chengyu-12-preview.png',
-            '字音字形': 'ziyin-13-preview.png',
-            '水墨中国风手机壁纸套装': 'wallpaper-ink-sunrise.jpg',
-            '卡通励志手机壁纸套装': 'wallpaper-cartoon-tiandao.jpg'
-          };
-          let cardImg = '';
-          for (const [kw, img] of Object.entries(imgMap)) {
-            if (m.title.includes(kw)) {
-              cardImg = '<div class="card-img-wrap"><img src="_previews/' + img + '" alt="' + m.title + '" class="card-img" /></div>';
-              break;
-            }
-          }
-          html += '<div class="card" data-id="' + m.id + '">' + cardImg +
-            '<div class="card-category">' + catName + '</div>' +
-            '<div class="card-title">' + m.title + '</div>' +
-            '<div class="card-summary">' + m.summary + '</div>' +
-            '<div class="card-footer">' +
-              '<span class="card-price">' + m.price + '</span>' +
-              '<div class="card-tags">' +
-                m.tags.slice(0, 2).map(t => '<span class="card-tag">' + t + '</span>').join('') +
-              '</div>' +
-            '</div>' +
-          '</div>';
-        });
-        grid.innerHTML = html;
-
-        document.querySelectorAll('.card').forEach(card => {
-          card.addEventListener('click', function() {
-            window.location.href = 'detail.html?id=' + this.dataset.id;
-          });
-        });
-      }
-
-      /* ── Countdown Banner ── */
-      function renderCountdown() {
-        // 南充中考日期：2026年6月中旬，假设6月15日
-        var examDate = new Date('2026-06-15T09:00:00+08:00');
-        var now = new Date();
-        var diff = examDate - now;
-        var banner = document.getElementById('countdown-banner');
-        if (diff > 0) {
-          var days = Math.floor(diff / 86400000);
-          document.getElementById('countdown-text').textContent =
-            '⏰ 南充中考倒计时 ' + days + ' 天 · 资料提前备好，考前不慌！';
-          banner.style.display = 'block';
-        }
-      }
-
-      /* ── Init ── */
-      renderCountdown();
-      renderStats();
-      renderFilters();
-      renderGrid();
-
-      document.getElementById('searchInput').addEventListener('input', function() {
-        searchQuery = this.value;
-        renderGrid();
+        const catName = DATA.getCategoryName(p.category);
+        html += '<div class="prod-card" onclick="location.href=\'detail.html?id=' + p.id + '\'">';
+        html += '<img src="' + img + '" class="prod-img" alt="' + p.title + '" onerror="this.style.background=\'#f0f0f0\';this.src=\'\'">';
+        html += '<div class="prod-cat">' + catName + '</div>';
+        html += '<div class="prod-title">' + p.title + '</div>';
+        html += '<div class="prod-price">' + p.price + '</div>';
+        html += '</div>';
       });
+      html += '</div>';
+      grid.innerHTML = html;
     })();
   </script>
 </body>
