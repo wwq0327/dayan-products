@@ -1,261 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="中考语文议论文阅读答题模板，包含论点提取、论据分析、论证方法辨析三大核心技巧，比喻论证、对比论证、道理论证、举例论证的完整答题格式与示例。">
-    <meta name="keywords" content="中考语文,议论文阅读,答题模板,论点,论据,论证方法,比喻论证,对比论证,道理论证,举例论证">
-    <title>中考语文议论文阅读答题模板（论点·论据·论证技巧）</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background: #f8f9fa; color: #333; line-height: 1.8; }
-        .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
-        h1 { font-size: 2em; color: #1a1a2e; text-align: center; margin-bottom: 12px; font-weight: 700; }
-        .subtitle { text-align: center; color: #888; font-size: 0.95em; margin-bottom: 40px; }
-        h2 { font-size: 1.4em; color: #16213e; margin: 36px 0 14px; padding-left: 12px; border-left: 4px solid #e94560; }
-        h3 { font-size: 1.1em; color: #0f3460; margin: 22px 0 10px; }
-        p { margin-bottom: 14px; font-size: 1em; }
-        .intro-box { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 30px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
-        .tip-box { background: #fff; border-radius: 10px; padding: 20px 24px; margin: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); border-left: 4px solid #e94560; }
-        .formula-box { background: #1a1a2e; color: #e8f4f8; border-radius: 8px; padding: 16px 22px; margin: 14px 0; font-family: "Courier New", monospace; font-size: 0.92em; line-height: 1.9; }
-        .example-box { background: #f0f4ff; border-radius: 8px; padding: 18px 22px; margin: 14px 0; border: 1px solid #d0d8f0; }
-        .example-box strong { color: #0f3460; }
-        .method-card { background: #fff; border-radius: 10px; padding: 22px 26px; margin: 18px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
-        .method-card h3 { color: #e94560; margin-top: 0; }
-        .tag-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
-        .tag { background: #e8f4f8; color: #0f3460; padding: 3px 10px; border-radius: 20px; font-size: 0.82em; }
-        strong.red { color: #e94560; }
-        .summary-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.95em; }
-        .summary-table th { background: #1a1a2e; color: #fff; padding: 12px 16px; text-align: left; }
-        .summary-table td { padding: 10px 16px; border-bottom: 1px solid #eee; }
-        .summary-table tr:nth-child(even) td { background: #f8f9fa; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中考语文核心考点梳理 | 大衍语文店</title>
+<meta name="description" content="大衍语文店提供南充中考中考语文核心考点梳理专项复习资料。">
+<style>
+body{font-family:'PingFang SC','Helvetica Neue',Arial,sans-serif;background:#faf9f7;color:#333;margin:0;padding:0}
+header{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:40px 20px;text-align:center}
+header h1{font-size:1.6rem;margin:0 0 8px}
+header p{margin:0;opacity:0.8;font-size:0.9rem}
+.container{max-width:750px;margin:0 auto;padding:30px 20px 60px}
+.content{background:#fff;border-radius:16px;padding:28px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.content h2{color:#c0392b;font-size:1.1rem;margin:20px 0 10px;padding-bottom:6px;border-bottom:2px solid #f0e0de}
+.content p{line-height:1.8;margin-bottom:12px;color:#444}
+.content ul{margin:0 0 16px;padding-left:20px}
+.content li{margin-bottom:8px;line-height:1.7}
+.cta{background:linear-gradient(135deg,#c0392b,#e74c3c);color:#fff;border-radius:16px;padding:24px;text-align:center;margin-top:24px}
+.cta a{display:inline-block;background:#fff;color:#c0392b;padding:10px 28px;border-radius:50px;text-decoration:none;font-weight:700}
+footer{text-align:center;padding:24px;color:#888;font-size:0.82rem;border-top:1px solid #eee;margin-top:30px}
+footer a{color:#c0392b}
+</style>
 </head>
 <body>
+<header><h1>📚 中考语文核心考点梳理</h1><p>大衍语文店 · 南充中考语文专项复习</p></header>
 <div class="container">
-
-<h1>中考语文议论文阅读答题模板（论点·论据·论证技巧）</h1>
-<div class="subtitle">发布于 2026年 · 中考语文阅读专项突破</div>
-
-<div class="intro-box">
-<p>议论文阅读是中考语文的必考题型，分值占比高，综合性强，很多同学在此失分严重。议论文阅读的核心是围绕<strong class="red">"论点—论据—论证"</strong>三大要素展开，只要掌握这套答题模板，就能系统化解题套路，在考场中游刃有余。</p>
-<p>本文整理了议论文阅读中最常考的三类题型：<strong>论点提取、论据分析、论证方法辨析</strong>，每类给出明确的<strong>解题技巧、答题公式和实例演示</strong>，帮助考生快速建立答题框架，提升阅读理解得分率。</p>
-</div>
-
-<h2>一、论点提取：精准定位文章核心观点</h2>
-
-<h3>1. 论点的基本特征</h3>
-<p>论点是作者对某一问题所持的<strong>主张和看法</strong>，是议论文的"灵魂"。中考议论文阅读中，论点通常具备以下特征：</p>
-<ul style="margin: 10px 0 14px 24px;">
-<li>表达形式上是<strong>完整的判断句</strong>（能判断对错、真假）</li>
-<li>态度立场<strong>明确肯定或否定</strong>，不含糊其辞</li>
-<li>位于文章<strong>标题、开头段末尾或结尾段</strong>的概率最高</li>
+<div class="content">
+<h2>核心考点</h2>
+<p>南充中考语文试卷涵盖中考语文核心考点梳理等多个核心模块。系统复习是提分关键。</p>
+<ul>
+<li>梳理知识框架，明确重点难点</li>
+<li>专项突破，针对性训练</li>
+<li>模拟练习，熟悉题型</li>
+<li>查漏补缺，巩固提升</li>
 </ul>
-
-<h3>2. 论点提取的核心技巧</h3>
-<div class="tip-box">
-<p><strong>技巧一：从标题推断论点。</strong>议论文标题往往是论点的浓缩或线索。看到标题时，先问自己："作者想证明什么？"</p>
-<p><strong>技巧二：寻找结构标志词。</strong>关注"因此""所以""由此可见""总而言之""我认为""必须""应当"等表结论的词语，这些词后面往往跟着论点。</p>
-<p><strong>技巧三：梳理全文结构，分辨论题与论点。</strong>论题是文章讨论的对象（如"坚持"），论点是作者的主张（如"坚持是成功的唯一途径"）。题目问"本文的论点是"，要找的是作者的具体主张，而非泛泛的论题。</p>
+<h2>复习策略</h2>
+<p>建议分阶段复习：先打基础，再专项训练，最后模拟冲刺。</p>
 </div>
-
-<h3>3. 论点提取答题公式</h3>
-<div class="formula-box">
-<span style="color:#e94560;">【论点提取答题公式】</span><br>
-<br>
-答案 = "本文（文章/作者）认为 + 具体主张判断句"<br>
-<br>
-常见陷阱排除：<br>
-✗ 论题（讨论对象） ≠ 论点（作者主张）<br>
-✗ 开头引用的他人观点 ≠ 论点<br>
-✗ 文章最后留待讨论的问题 ≠ 论点
-</div>
-
-<h3>4. 实例演示</h3>
-<div class="example-box">
-<p><strong>【示例】</strong>文章标题：《坚持，终会遇见更好的自己》</p>
-<p>文章结尾写道："因此，无论前方有多少困难，只要坚持，终会遇见更好的自己。"</p>
-<p><strong>答案示范：</strong>本文认为，无论前方有多少困难，只要坚持，终会遇见更好的自己。（或：坚持是实现自我提升的必要条件。）</p>
-</div>
-
-<h2>二、论据分析：论证大厦的坚实基石</h2>
-
-<h3>1. 议论文论据的两种类型</h3>
-<table class="summary-table">
-    <tr><th>类型</th><th>特点</th><th>常见来源</th></tr>
-    <tr><td><strong>事实论据</strong></td><td>具体事例、数据、历史事件</td><td>名人故事、统计数据、社会热点</td></tr>
-    <tr><td><strong>道理论据</strong></td><td>理论观点、名言警句、原理规律</td><td>名人名言、科学定律、哲学观点</td></tr>
-</table>
-
-<h3>2. 论据分析的考查方向与答题公式</h3>
-
-<p><strong>方向一：论据与论点的关系（最常考）</strong></p>
-<div class="formula-box">
-<span style="color:#e94560;">【论据作用答题公式】</span><br>
-<br>
-这个事例/道理证明了 + 论点（回扣原文具体论点），
-体现了议论文"以事论理"的写作特点，
-从而使论证更有说服力/更具体形象。
-</div>
-
-<p><strong>方向二：论据能否替换或删除</strong></p>
-<div class="formula-box">
-<span style="color:#e94560;">【论据替换/删除判断答题公式】</span><br>
-<br>
-不能/能替换。<br>
-理由：该论据是 + [事实论据/道理论据]，
-说明了 + 具体内容，
-与文章论点"____"构成 + [正面论证/反面论证/补充论证]，
-若替换/删除后，则无法证明该论点，
-使论证缺乏说服力/显得过于片面。
-</div>
-
-<h3>3. 实例演示</h3>
-<div class="example-box">
-<p><strong>【示例】</strong>论点："梦想是人生的动力源。"文中举了爱迪生经历上千次失败最终发明电灯泡的故事。</p>
-<p><strong>答题示范：</strong></p>
-<p>这个事例属于<strong>事实论据</strong>，有力地证明了"梦想是人生的动力源"这一论点。爱迪生面对上千次失败仍不放弃，正是因为心中怀揣着发明电灯泡的梦想在支撑着他坚持下去。该论据体现了议论文"以事实说话"的论证特点，使论证具体可信，具有很强的说服力。</p>
-</div>
-
-<h2>三、论证方法辨析：四大高频论证技巧</h2>
-
-<h3>1. 四大论证方法速览</h3>
-<table class="summary-table">
-    <tr><th>论证方法</th><th>核心特征</th><th>关键词识别</th></tr>
-    <tr><td><strong>举例论证</strong></td><td>用具体事例证明论点</td><td>比如、例如、以……为例、有这样的故事</td></tr>
-    <tr><td><strong>道理论证</strong></td><td>引用名言、原理、规律证明论点</td><td>正如……所说、古人云、俗话说、事实证明</td></tr>
-    <tr><td><strong>对比论证</strong></td><td>用正反两方面事例对照比较</td><td>然而、但是、与之相反、有人……也有人……</td></tr>
-    <tr><td><strong>比喻论证</strong></td><td>用具体事物打比方说明抽象道理</td><td>就像、好比、好似、如同一……</td></tr>
-</table>
-
-<h3>2. 比喻论证详解</h3>
-
-<div class="method-card">
-<h3>🎯 比喻论证</h3>
-<div class="tag-row"><span class="tag">高频考点</span><span class="tag">易混淆</span></div>
-<p><strong>核心特征：</strong>利用两者之间的相似性，用具体、熟悉的事物来阐释抽象、不熟悉的道理。</p>
-<p><strong>答题公式：</strong></p>
-<div class="formula-box">
-<span style="color:#e94560;">【比喻论证答题公式】</span><br>
-<br>
-方法判断：本文（段）运用了比喻论证的论证方法。<br>
-内容还原：将"____"比作"____"，<br>
-作用分析：生动形象地阐明了"____"（论点/抽象道理），
-把抽象的道理说得具体可感，
-易于读者理解接受，
-增强了文章的说服力和感染力。
-</div>
-<p><strong>实例演示：</strong></p>
-<div class="example-box">
-<p>原文："梦想是人生的灯塔，在黑暗中为我们指引方向。"</p>
-<p><strong>答题示范：</strong>这句话运用了<strong>比喻论证</strong>的论证方法，将"梦想"比作"灯塔"，生动形象地阐明了梦想对人生的指引作用，把"梦想对人生的积极意义"这一抽象道理说得具体可感，使读者易于理解，增强了论证的感染力。</p>
+<div class="cta">
+<p>📚 查看全部23份中考语文复习资料</p>
+<a href="https://wwq0327.github.io/dayan-products/">进入店铺 →</a>
 </div>
 </div>
-
-<h3>3. 对比论证详解</h3>
-
-<div class="method-card">
-<h3>🎯 对比论证</h3>
-<div class="tag-row"><span class="tag">高频考点</span><span class="tag">易识别</span></div>
-<p><strong>核心特征：</strong>将两种截然不同的事物或观点放在一起，通过对照突出其中一方的正确性或危害性。</p>
-<p><strong>答题公式：</strong></p>
-<div class="formula-box">
-<span style="color:#e94560;">【对比论证答题公式】</span><br>
-<br>
-方法判断：本文（段）运用了对比论证的论证方法。<br>
-内容概括：将"____"与"____"进行对比，<br>
-作用分析：形成鲜明对照，强烈突出[正面/反面]一方，
-有力证明了"____"（论点），
-使道理不言自明，增强论证的折服力。
-</div>
-<p><strong>实例演示：</strong></p>
-<div class="example-box">
-<p>原文："同样面对困难，消极的人把它当作无法逾越的障碍，乐观的人把它当作磨炼意志的机会。"</p>
-<p><strong>答题示范：</strong>这句话运用了<strong>对比论证</strong>的论证方法，将"消极的人"与"乐观的人"面对困难的不同态度进行对比，形成鲜明对照，突出强调了积极心态对于克服困难的重要意义，有力地论证了"心态决定命运"这一论点，使论证逻辑清晰、说服力强。</p>
-</div>
-</div>
-
-<h3>4. 道理论证详解</h3>
-
-<div class="method-card">
-<h3>🎯 道理论证</h3>
-<div class="tag-row"><span class="tag">高频考点</span><span class="tag">需积累</span></div>
-<p><strong>核心特征：</strong>引用权威的理论、名言、警句或经过实践证明的道理，来证明论点。</p>
-<p><strong>答题公式：</strong></p>
-<div class="formula-box">
-<span style="color:#e94560;">【道理论证答题公式】</span><br>
-<br>
-方法判断：本文（段）运用了道理论证的论证方法。<br>
-引用内容：引用了[人物/出处]的名言"____"，<br>
-作用分析：充分有力地论证了"____"（论点），
-增强了论证的权威性和说服力，
-使文章更具文化底蕴和理论深度。
-</div>
-<p><strong>实例演示：</strong></p>
-<div class="example-box">
-<p>原文："正如爱因斯坦所说：'想象力比知识更重要，因为知识是有限的，而想象力概括着世界上的一切，推动着进步，并且是知识进化的源泉。'"</p>
-<p><strong>答题示范：</strong>这句话运用了<strong>道理论证</strong>的论证方法，引用了爱因斯坦的名言，充分有力地论证了"想象力对于创新具有重要推动作用"这一论点。名言本身具有权威性，使论证更具说服力，同时增强了文章的理论深度和文化底蕴。</p>
-</div>
-</div>
-
-<h3>5. 举例论证详解</h3>
-
-<div class="method-card">
-<h3>🎯 举例论证</h3>
-<div class="tag-row"><span class="tag">高频考点</span><span class="tag">最基础</span></div>
-<p><strong>核心特征：</strong>列举具体、典型的事例（包括人物故事、统计数据、历史事件等）来证明论点。</p>
-<p><strong>答题公式：</strong></p>
-<div class="formula-box">
-<span style="color:#e94560;">【举例论证答题公式】</span><br>
-<br>
-方法判断：本文（段）运用了举例论证的论证方法。<br>
-例子概括：列举了[具体事例内容]，<br>
-论点对应：具体有力地证明了"____"（论点），<br>
-作用效果：使论证内容具体真实，
-增强了文章的说服力，让读者感到真实可信。
-</div>
-<p><strong>实例演示：</strong></p>
-<div class="example-box">
-<p>原文："居里夫人经过无数次实验，最终从沥青中提炼出了镭。"</p>
-<p><strong>答题示范：</strong>这句话运用了<strong>举例论证</strong>的论证方法，通过列举居里夫人提炼镭的具体事例，具体有力地论证了"成功离不开坚持与付出"这一论点，使论证内容真实可信，增强了文章的说服力。</p>
-</div>
-</div>
-
-<h2>四、综合练习与考场提示</h2>
-
-<h3>1. 真题实战演练</h3>
-<div class="example-box">
-<p><strong>【2024年某市中考题】</strong>阅读议论文《匠心》，回答问题：</p>
-<p>文章第二段写道："日本寿司匠人小野二郎，数十年来只做一件事——捏寿司。他的每一个动作都精准到毫米，哪怕一丝一毫的偏差都不放过。正是这种近乎苛刻的专注，让他成为了'寿司之神'。"</p>
-<p><strong>问题：</strong>画线句运用了哪种论证方法？有什么作用？</p>
-<p><strong>标准答案：</strong></p>
-<p>画线句运用了<strong>举例论证</strong>的论证方法，列举了日本寿司匠人小野二郎数十年专注捏寿司的具体事例，有力论证了"匠心源于极致的专注与坚持"这一论点（或文章中心论点），使论证内容具体真实，增强了文章的说服力。</p>
-</div>
-
-<h3>2. 考场注意事项</h3>
-<div class="tip-box">
-<p><strong>① 审题先行：</strong>看清题目问的是"论证方法"还是"论证特点"，前者需指出具体方法，后者侧重分析作用效果。</p>
-<p><strong>② 结合原文：</strong>答题时必须回扣文章具体论点，不能只写空洞的"证明了论点"，要写出论点内容。</p>
-<p><strong>③ 格式规范：</strong>先判断方法，再概括内容，最后分析作用，三步缺一不可，格式完整才能拿满分。</p>
-<p><strong>④ 避免混淆：</strong>比喻论证和举例论证都用了"具体"，但前者是"打比方"，后者是"举事例"，本质不同。</p>
-<p><strong>⑤ 时间分配：</strong>议论文阅读建议用时12-15分钟，论点提取2-3分钟，论据分析3-4分钟，论证方法题4-5分钟，留5分钟检查。</p>
-</div>
-
-<h2>五、四大论证方法辨析要点总结</h2>
-
-<table class="summary-table">
-    <tr><th>论证方法</th><th>本质区别</th><th>辨别口诀</th><th>常见错误</th></tr>
-    <tr><td>举例论证</td><td>举出真实事例</td><td>有人有事有故事</td><td>写成"比喻论证"（比喻不涉及真实事例）</td></tr>
-    <tr><td>道理论证</td><td>引用名言原理</td><td>名人说过古话俗话</td><td>写成"举例论证"（名言不是具体事例）</td></tr>
-    <tr><td>对比论证</td><td>正反两面比较</td><td>一正一反对照看</td><td>只写"举例"未指出对比性质</td></tr>
-    <tr><td>比喻论证</td><td>打比方说明理</td><td>像如同如同一</td><td>与举例混淆（比喻无真实事例）</td></tr>
-</table>
-
-<div class="tip-box">
-<p><strong>🔮 大衍神君提示：</strong></p>
-<p>议论文阅读的核心是抓住"论点"这个纲。论点找准了，论据和论证方法的分析都是顺水推舟。四大论证方法中，比喻论证最容易与举例论证混淆，核心区别在于：比喻论证强调"相似性"（A像B），举例论证强调"真实性"（确有其人其事）。记住这个区别，辨析题不再出错。</p>
-</div>
-
-</div>
+<footer>
+<p>大衍语文店 · <a href="https://wwq0327.github.io/dayan-products/">https://wwq0327.github.io/dayan-products/</a></p>
+<p style="margin-top:8px">📧 sjfc_0224@qq.com</p>
+</footer>
 </body>
 </html>
